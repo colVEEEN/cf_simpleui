@@ -1,0 +1,1916 @@
+{
+    "ClientConfiguration": {
+        "ConfigurationName": "Мегастрой УТ11",
+        "ConfigurationDescription": "",
+        "ConfigurationVersion": "2025.9.23",
+        "Processes": [
+            {
+                "type": "Process",
+                "ProcessName": "Меню",
+                "Operations": [
+                    {
+                        "type": "Operation",
+                        "Name": "Главное меню",
+                        "Elements": [
+                            {
+                                "type": "LinearLayout",
+                                "orientation": "vertical",
+                                "height": "match_parent",
+                                "width": "match_parent",
+                                "BackgroundColor": "#F8F9FA",
+                                "Padding": "24,24,24,24",
+                                "Elements": [
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "BackgroundColor": "#FFFFFF",
+                                        "Padding": "32,32,32,32",
+                                        "Radius": "16",
+                                        "StrokeWidth": "1",
+                                        "StrokeColor": "#E5E7EB",
+                                        "Margin": "0,0,0,20",
+                                        "Elements": [
+                                            {
+                                                "type": "TextView",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "🏢 Мегастрой УТ11",
+                                                "TextSize": "28",
+                                                "TextBold": true,
+                                                "TextColor": "#1E40AF",
+                                                "gravity_horizontal": "center",
+                                                "Padding": "0,0,0,12",
+                                                "type_s": "Надпись",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            },
+                                            {
+                                                "type": "TextView",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "Выберите раздел для работы",
+                                                "TextSize": "16",
+                                                "TextColor": "#6B7280",
+                                                "gravity_horizontal": "center",
+                                                "type_s": "Надпись",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            }
+                                        ],
+                                        "type_s": "Контейнер",
+                                        "height_value": "wrap_content",
+                                        "width_value": "match_parent",
+                                        "weight": "0"
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "BackgroundColor": "#FFFFFF",
+                                        "Padding": "24,24,24,24",
+                                        "Radius": "16",
+                                        "StrokeWidth": "1",
+                                        "StrokeColor": "#E5E7EB",
+                                        "Margin": "0,0,0,16",
+                                        "Elements": [
+                                            {
+                                                "type": "Button",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "🔍 Поиск товара",
+                                                "Variable": "btn_search_product",
+                                                "type_s": "Кнопка",
+                                                "BackgroundColor": "#3B82F6",
+                                                "TextColor": "#FFFFFF",
+                                                "TextSize": "18",
+                                                "TextBold": true,
+                                                "Radius": "12",
+                                                "Padding": "20,20,20,20",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            }
+                                        ],
+                                        "type_s": "Контейнер",
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "BackgroundColor": "#FFFFFF",
+                                        "Padding": "24,24,24,24",
+                                        "Radius": "16",
+                                        "StrokeWidth": "1",
+                                        "StrokeColor": "#E5E7EB",
+                                        "Margin": "0,0,0,16",
+                                        "Elements": [
+                                            {
+                                                "type": "Button",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "🛒 Проверка ценников",
+                                                "Variable": "btn_check_prices",
+                                                "type_s": "Кнопка",
+                                                "BackgroundColor": "#059669",
+                                                "TextColor": "#FFFFFF",
+                                                "TextSize": "18",
+                                                "TextBold": true,
+                                                "Radius": "12",
+                                                "Padding": "20,20,20,20",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            }
+                                        ],
+                                        "type_s": "Контейнер",
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "BackgroundColor": "#FFFFFF",
+                                        "Padding": "24,24,24,24",
+                                        "Radius": "16",
+                                        "StrokeWidth": "1",
+                                        "StrokeColor": "#E5E7EB",
+                                        "Margin": "0,0,0,16",
+                                        "Elements": [
+                                            {
+                                                "type": "Button",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "📋 Заказы покупателей",
+                                                "Variable": "btn_orders",
+                                                "type_s": "Кнопка",
+                                                "BackgroundColor": "#7C3AED",
+                                                "TextColor": "#FFFFFF",
+                                                "TextSize": "18",
+                                                "TextBold": true,
+                                                "Radius": "12",
+                                                "Padding": "20,20,20,20",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            }
+                                        ],
+                                        "type_s": "Контейнер",
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "BackgroundColor": "#FFFFFF",
+                                        "Padding": "24,24,24,24",
+                                        "Radius": "16",
+                                        "StrokeWidth": "1",
+                                        "StrokeColor": "#E5E7EB",
+                                        "Margin": "0,0,0,16",
+                                        "Elements": [
+                                            {
+                                                "type": "Button",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "⚙️ Настройки",
+                                                "Variable": "btn_settings",
+                                                "type_s": "Кнопка",
+                                                "BackgroundColor": "#6B7280",
+                                                "TextColor": "#FFFFFF",
+                                                "TextSize": "18",
+                                                "TextBold": true,
+                                                "Radius": "12",
+                                                "Padding": "20,20,20,20",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            }
+                                        ],
+                                        "type_s": "Контейнер",
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "BackgroundColor": "#FFFFFF",
+                                        "Padding": "24,24,24,24",
+                                        "Radius": "16",
+                                        "StrokeWidth": "1",
+                                        "StrokeColor": "#E5E7EB",
+                                        "Margin": "0,0,0,16",
+                                        "Elements": [
+                                            {
+                                                "type": "Button",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "🚪 Выход",
+                                                "Variable": "btn_logout",
+                                                "type_s": "Кнопка",
+                                                "BackgroundColor": "#EF4444",
+                                                "TextColor": "#FFFFFF",
+                                                "TextSize": "18",
+                                                "TextBold": true,
+                                                "Radius": "12",
+                                                "Padding": "20,20,20,20",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            }
+                                        ],
+                                        "type_s": "Контейнер",
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    }
+                                ],
+                                "type_s": "Контейнер",
+                                "height_value": "match_parent",
+                                "width_value": "match_parent",
+                                "weight": "0"
+                            }
+                        ],
+                        "hideBottomBarScreen": true,
+                        "Handlers": [],
+                        "noConfirmation": true,
+                        "hideToolBarScreen": true,
+                        "noScroll": true
+                    }
+                ]
+            },
+            {
+                "type": "Process",
+                "ProcessName": "Авторизация",
+                "Operations": [
+                    {
+                        "type": "Operation",
+                        "Name": "Экран \"Авторизация\"",
+                        "Elements": [
+                            {
+                                "type": "LinearLayout",
+                                "orientation": "vertical",
+                                "height": "match_parent",
+                                "width": "match_parent",
+                                "BackgroundColor": "#F8F9FA",
+                                "Padding": "24,24,24,24",
+                                "Elements": [
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": 0,
+                                        "width": "match_parent",
+                                        "weight": "1",
+                                        "gravity_vertical": "center",
+                                        "Elements": [
+                                            {
+                                                "type": "LinearLayout",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "BackgroundColor": "#FFFFFF",
+                                                "Padding": "32,32,32,32",
+                                                "Radius": "16",
+                                                "StrokeWidth": "1",
+                                                "StrokeColor": "#E5E7EB",
+                                                "Elements": [
+                                                    {
+                                                        "type": "TextView",
+                                                        "orientation": "vertical",
+                                                        "height": "wrap_content",
+                                                        "width": "match_parent",
+                                                        "Value": "🔐 Авторизация",
+                                                        "TextSize": "32",
+                                                        "TextBold": true,
+                                                        "TextColor": "#1E40AF",
+                                                        "gravity_horizontal": "center",
+                                                        "Padding": "0,0,0,32",
+                                                        "type_s": "Надпись",
+                                                        "weight": "0",
+                                                        "width_value": "match_parent",
+                                                        "height_value": "wrap_content"
+                                                    },
+                                                    {
+                                                        "type": "TextView",
+                                                        "orientation": "vertical",
+                                                        "height": "wrap_content",
+                                                        "width": "match_parent",
+                                                        "Value": "Выберите пользователя для входа в систему",
+                                                        "TextSize": "16",
+                                                        "TextColor": "#6B7280",
+                                                        "gravity_horizontal": "center",
+                                                        "Padding": "0,0,0,24",
+                                                        "type_s": "Надпись",
+                                                        "weight": "0",
+                                                        "width_value": "match_parent",
+                                                        "height_value": "wrap_content"
+                                                    },
+                                                    {
+                                                        "type": "DataSetField",
+                                                        "orientation": "vertical",
+                                                        "height": "wrap_content",
+                                                        "width": "match_parent",
+                                                        "Value": "@set_dsUsers",
+                                                        "Variable": "selected_user",
+                                                        "type_s": "Поле датасета",
+                                                        "Margin": "0,0,0,24",
+                                                        "TextSize": "16",
+                                                        "TextColor": "#374151",
+                                                        "BackgroundColor": "#F9FAFB",
+                                                        "Radius": "8",
+                                                        "Padding": "12,12,12,12",
+                                                        "StrokeWidth": "1",
+                                                        "StrokeColor": "#D1D5DB",
+                                                        "height_value": "wrap_content",
+                                                        "width_value": "match_parent",
+                                                        "weight": "0"
+                                                    },
+                                                    {
+                                                        "type": "Button",
+                                                        "orientation": "vertical",
+                                                        "height": "wrap_content",
+                                                        "width": "match_parent",
+                                                        "Value": "Войти в систему",
+                                                        "Variable": "btn_login",
+                                                        "type_s": "Кнопка",
+                                                        "BackgroundColor": "#10B981",
+                                                        "TextColor": "#FFFFFF",
+                                                        "TextSize": "18",
+                                                        "TextBold": true,
+                                                        "Radius": "12",
+                                                        "Padding": "16,16,16,16",
+                                                        "weight": "0",
+                                                        "width_value": "match_parent",
+                                                        "height_value": "wrap_content"
+                                                    }
+                                                ],
+                                                "type_s": "Контейнер",
+                                                "height_value": "wrap_content",
+                                                "width_value": "match_parent",
+                                                "weight": "0"
+                                            }
+                                        ],
+                                        "type_s": "Контейнер",
+                                        "height_value": 0,
+                                        "width_value": "match_parent"
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "Padding": "0,16,0,0",
+                                        "Elements": [
+                                            {
+                                                "type": "Button",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "🔄 Получить пользователей",
+                                                "Variable": "btn_get_users",
+                                                "type_s": "Кнопка",
+                                                "BackgroundColor": "#6B7280",
+                                                "TextColor": "#FFFFFF",
+                                                "TextSize": "16",
+                                                "TextBold": true,
+                                                "Radius": "12",
+                                                "Padding": "16,16,16,16",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            }
+                                        ],
+                                        "type_s": "Контейнер",
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    }
+                                ],
+                                "type_s": "Контейнер",
+                                "height_value": "match_parent",
+                                "width_value": "match_parent",
+                                "weight": "0"
+                            }
+                        ],
+                        "hideBottomBarScreen": true,
+                        "Handlers": [
+                            {
+                                "event": "onStart",
+                                "action": "run",
+                                "listener": "",
+                                "type": "pythonscript",
+                                "method": "aW1wb3J0IGpzb24KaW1wb3J0IGRhdGV0aW1lCgpoYXNoTWFwLnB1dCgiY2hlY2tfZGF0ZSIsIGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLnN0cmZ0aW1lKCIlWS0lbS0lZCIpKQoKc2V0X2RzVXNlcnMgPSB7CiAgICAiZGF0YXNldCI6ICJkc1VzZXJzIiwKICAgICJpbmxpbmUiOiBUcnVlLAogICAgInNlbGVjdCI6IFRydWUsCiAgICAiaGludCI6ICLQktCy0LXQtNC40YLQtSDQt9C90LDRh9C10L3QuNC1INC00LvRjyDQv9C+0LjRgdC60LAiCn0KaGFzaE1hcC5wdXQoInNldF9kc1VzZXJzIiwganNvbi5kdW1wcyhzZXRfZHNVc2VycywgZW5zdXJlX2FzY2lpPUZhbHNlKSkKaGFzaE1hcC5wdXQoIlJlZnJlc2hTY3JlZW4iLCAiIik=",
+                                "postExecute": "",
+                                "alias": ""
+                            },
+                            {
+                                "event": "onInput",
+                                "action": "runprogress",
+                                "listener": "btn_get_users",
+                                "type": "online",
+                                "method": "ПолучитьДатаСетПользователей",
+                                "postExecute": "[{\"action\": \"run\", \"type\": \"pythonscript\", \"method\": \"aW1wb3J0IGpzb24KCiMg0J/RgNC+0LLQtdGA0Y/QtdC8LCDQv9C+0LvRg9GH0LXQvdGLINC70Lgg0LTQsNC90L3Ri9C1INC40LcgMdChCmlmIGhhc2hNYXAuY29udGFpbnNLZXkoImRzVXNlcnMiKToKICAgICMg0J/QvtC70YPRh9Cw0LXQvCDQuNC70Lgg0YHQvtC30LTQsNC10Lwg0LTQsNGC0LDRgdC10YIKICAgIGRzVXNlcnMgPSBDcmVhdGVEYXRhU2V0KCJkc1VzZXJzIikKICAgICMg0KPRgdGC0LDQvdCw0LLQu9C40LLQsNC10Lwg0L7Qv9GG0LjQuCDQtNCw0YLQsNGB0LXRgtCwCiAgICBkc1VzZXJzLnNldE9wdGlvbnMoanNvbi5kdW1wcyh7CiAgICAgICAgImhhc2hfa2V5cyI6IFsibmFtZSIsICJmdWxsX25hbWUiXSwKICAgICAgICAic2VhcmNoX2tleXMiOiAibmFtZSxmdWxsX25hbWUiLAogICAgICAgICJ2aWV3X3RlbXBsYXRlIjogIjxiPntuYW1lfTwvYj4gKHtmdWxsX25hbWV9KSIKICAgIH0sIGVuc3VyZV9hc2NpaT1GYWxzZSkpCgogICAgIyDQlNC+0LHQsNCy0LvRj9C10Lwg0LTQsNC90L3Ri9C1INCyINC00LDRgtCw0YHQtdGCCiAgICBkc1VzZXJzLnB1dChoYXNoTWFwLmdldCgiZHNVc2VycyIpKQogICAgIyDQodC+0YXRgNCw0L3Rj9C10Lwg0LTQsNGC0LDRgdC10YIg0L3QsCDQtNC40YHQugogICAgZHNVc2Vycy5zYXZlKCkKICAgIHRvYXN0KCLQn9C+0LvRjNC30L7QstCw0YLQtdC70Lgg0LfQsNCz0YDRg9C20LXQvdGLIikKCiAgICBzZXRfZHNVc2VycyA9IHsKICAgICAgICAiZGF0YXNldCI6ICJkc1VzZXJzIiwKICAgICAgICAiaW5saW5lIjogVHJ1ZSwKICAgICAgICAic2VsZWN0IjogVHJ1ZSwKICAgICAgICAiaGludCI6ICLQktCy0LXQtNC40YLQtSDQt9C90LDRh9C10L3QuNC1INC00LvRjyDQv9C+0LjRgdC60LAiCiAgICB9CiAgICBoYXNoTWFwLnB1dCgic2V0X2RzVXNlcnMiLCBqc29uLmR1bXBzKHNldF9kc1VzZXJzLCBlbnN1cmVfYXNjaWk9RmFsc2UpKQplbHNlOgogICAgdG9hc3QoItCe0YjQuNCx0LrQsDog0LTQsNC90L3Ri9C1INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvQuCDQvdC1INC/0L7Qu9GD0YfQtdC90YsiKQ==\"}]",
+                                "alias": ""
+                            },
+                            {
+                                "event": "onInput",
+                                "action": "run",
+                                "listener": "btn_login",
+                                "type": "pythonscript",
+                                "method": "aW1wb3J0IGpzb24KCiMg0J/RgNC+0LLQtdGA0Y/QtdC8LCDQstGL0LHRgNCw0L0g0LvQuCDQv9C+0LvRjNC30L7QstCw0YLQtdC70YwKdXNlcl9ndWlkID0gIiIKdXNlcl9uYW1lID0gIiIKdXNlcl9kYXRhID0gTm9uZQoKIyDQodC/0L7RgdC+0LEgMTog0YfQtdGA0LXQtyBDYXJkc0NsaWNrICjQstGL0LHQvtGAINC40Lcg0YHQv9C40YHQutCwKQppZiBoYXNoTWFwLmNvbnRhaW5zS2V5KCJzZWxlY3RlZF9jYXJkX2tleSIpIGFuZCBoYXNoTWFwLmdldCgic2VsZWN0ZWRfY2FyZF9rZXkiKToKICAgIHNlbGVjdGVkX2tleSA9IGhhc2hNYXAuZ2V0KCJzZWxlY3RlZF9jYXJkX2tleSIpCiAgICBpZiAiJCIgaW4gc2VsZWN0ZWRfa2V5OgogICAgICAgIGRhdGFzZXRfbmFtZSwgcmVjb3JkX2lkID0gc2VsZWN0ZWRfa2V5LnNwbGl0KCIkIiwgMSkKICAgICAgICAKICAgICAgICAjINCY0YHQv9C+0LvRjNC30YPQtdC8IHNlbGVjdGVkX2NhcmRfZGF0YSDQtdGB0LvQuCDQtNC+0YHRgtGD0L/QvdCwCiAgICAgICAgaWYgaGFzaE1hcC5jb250YWluc0tleSgic2VsZWN0ZWRfY2FyZF9kYXRhIikgYW5kIGhhc2hNYXAuZ2V0KCJzZWxlY3RlZF9jYXJkX2RhdGEiKToKICAgICAgICAgICAgdXNlcl9kYXRhID0ganNvbi5sb2FkcyhoYXNoTWFwLmdldCgic2VsZWN0ZWRfY2FyZF9kYXRhIikpCiAgICAgICAgZWxzZToKICAgICAgICAgICAgIyDQmNC90LDRh9C1INC/0L7Qu9GD0YfQsNC10Lwg0LjQtyDQtNCw0YLQsNGB0LXRgtCwCiAgICAgICAgICAgIGRzX3VzZXJzID0gR2V0RGF0YVNldCgiZHNVc2VycyIpCiAgICAgICAgICAgIGlmIGRzX3VzZXJzOgogICAgICAgICAgICAgICAgdXNlcl9kYXRhX2pzb24gPSBkc191c2Vycy5nZXRTdHIoIl9pZCIsIHJlY29yZF9pZCkKICAgICAgICAgICAgICAgIGlmIHVzZXJfZGF0YV9qc29uOgogICAgICAgICAgICAgICAgICAgIHVzZXJfZGF0YSA9IGpzb24ubG9hZHModXNlcl9kYXRhX2pzb24pCgojINCh0L/QvtGB0L7QsSAyOiDRh9C10YDQtdC3IERhdGFTZXRGaWVsZCBpbmxpbmUgKNGA0YPRh9C90L7QuSDQstCy0L7QtCkKZWxpZiBoYXNoTWFwLmNvbnRhaW5zS2V5KCJzZWxlY3RlZF91c2VyIikgYW5kIGhhc2hNYXAuZ2V0KCJzZWxlY3RlZF91c2VyIik6CiAgICBzZWxlY3RlZF91c2VyID0gaGFzaE1hcC5nZXQoInNlbGVjdGVkX3VzZXIiKQogICAgaWYgIiQiIGluIHNlbGVjdGVkX3VzZXI6CiAgICAgICAgcGFydHMgPSBzZWxlY3RlZF91c2VyLnNwbGl0KCIkIikKICAgICAgICBpZiBsZW4ocGFydHMpID09IDI6CiAgICAgICAgICAgIHJlY29yZF9pZCA9IHBhcnRzWzFdCiAgICAgICAgICAgIGRzX3VzZXJzID0gR2V0RGF0YVNldCgiZHNVc2VycyIpCiAgICAgICAgICAgIGlmIGRzX3VzZXJzOgogICAgICAgICAgICAgICAgdXNlcl9kYXRhX2pzb24gPSBkc191c2Vycy5nZXRTdHIoIl9pZCIsIHJlY29yZF9pZCkKICAgICAgICAgICAgICAgIGlmIHVzZXJfZGF0YV9qc29uOgogICAgICAgICAgICAgICAgICAgIHVzZXJfZGF0YSA9IGpzb24ubG9hZHModXNlcl9kYXRhX2pzb24pCgojINCV0YHQu9C4INC90LDRiNC70Lgg0LTQsNC90L3Ri9C1INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjwppZiB1c2VyX2RhdGE6CiAgICB1c2VyX2d1aWQgPSB1c2VyX2RhdGEuZ2V0KCJ1aWQiLCAiIikKICAgIHVzZXJfbmFtZSA9IHVzZXJfZGF0YS5nZXQoImZ1bGxfbmFtZSIsIHVzZXJfZGF0YS5nZXQoIm5hbWUiLCAiIikpCiAgICAKICAgIGlmIHVzZXJfZ3VpZCBhbmQgdXNlcl9uYW1lOgogICAgICAgICMg0JfQsNC/0LjRgdGL0LLQsNC10Lwg0LIg0LPQu9C+0LHQsNC70YzQvdGL0LUg0L/QtdGA0LXQvNC10L3QvdGL0LUKICAgICAgICBoYXNoTWFwLnB1dCgiX2N1cnJlbnRfdXNlcl9ndWlkIiwgdXNlcl9ndWlkKQogICAgICAgIGhhc2hNYXAucHV0KCJfY3VycmVudF91c2VyX25hbWUiLCB1c2VyX25hbWUpCiAgICAgICAgaGFzaE1hcC5wdXQoIl9pc19hdXRob3JpemVkIiwgInRydWUiKQogICAgICAgIAogICAgICAgICMg0J/QvtC60LDQt9GL0LLQsNC10Lwg0YHQvtC+0LHRidC10L3QuNC1INC+0LEg0YPRgdC/0LXRiNC90L7QuSDQsNCy0YLQvtGA0LjQt9Cw0YbQuNC4CiAgICAgICAgdG9hc3QoItCQ0LLRgtC+0YDQuNC30LDRhtC40Y8g0LLRi9C/0L7Qu9C90LXQvdCwINGD0YHQv9C10YjQvdC+OiAiICsgdXNlcl9uYW1lKQogICAgICAgIAogICAgICAgICMg0J/QtdGA0LXRhdC+0LTQuNC8INC90LAg0LPQu9Cw0LLQvdGL0Lkg0Y3QutGA0LDQvSDQvNC10L3RjgogICAgICAgIGhhc2hNYXAucHV0KCJGaW5pc2hQcm9jZXNzIiwgItCU0LLQtdGA0LjRgtC1IikKICAgIGVsc2U6CiAgICAgICAgdG9hc3QoItCe0YjQuNCx0LrQsDog0LTQsNC90L3Ri9C1INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjyBHVUlEINC40LvQuCDQuNC80Y8g0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIikKZWxzZToKICAgIHRvYXN0KCLQktGL0LHQtdGA0LjRgtC1INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjyDQtNC70Y8g0LDQstGC0L7RgNC40LfQsNGG0LjQuCIp",
+                                "postExecute": "",
+                                "alias": ""
+                            }
+                        ],
+                        "noConfirmation": true,
+                        "hideToolBarScreen": true,
+                        "noScroll": true
+                    }
+                ],
+                "login_screen": true,
+                "hidden": true
+            },
+            {
+                "type": "Process",
+                "ProcessName": "Поиск товара",
+                "Operations": [
+                    {
+                        "type": "Operation",
+                        "Name": "Экран \"Остатки и цены\"",
+                        "Elements": [
+                            {
+                                "type": "barcode",
+                                "orientation": "vertical",
+                                "height": "match_parent",
+                                "width": "match_parent",
+                                "Variable": "barcode",
+                                "type_s": "Штрихкод",
+                                "weight": "0",
+                                "width_value": "match_parent",
+                                "height_value": "match_parent"
+                            },
+                            {
+                                "type": "LinearLayout",
+                                "orientation": "vertical",
+                                "height": "match_parent",
+                                "width": "match_parent",
+                                "BackgroundColor": "#F8F9FA",
+                                "Padding": "16,8,16,16",
+                                "Elements": [
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "BackgroundColor": "#FFFFFF",
+                                        "Padding": "0,0,0,12",
+                                        "Radius": "16",
+                                        "StrokeWidth": "1",
+                                        "Margin": "0,8,0,16",
+                                        "Elements": [
+                                            {
+                                                "type": "TextView",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "🔍 Поиск товара",
+                                                "TextSize": "24",
+                                                "TextBold": true,
+                                                "TextColor": "#1A1A1A",
+                                                "Padding": "0,0,0,12",
+                                                "type_s": "Надпись",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            },
+                                            {
+                                                "type": "DataSetField",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "@set_dsProducts",
+                                                "Variable": "search_value",
+                                                "type_s": "Поле датасета",
+                                                "weight": "0",
+                                                "height_value": "wrap_content",
+                                                "width_value": "match_parent"
+                                            }
+                                        ],
+                                        "type_s": "Контейнер",
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "BackgroundColor": "#FFFFFF",
+                                        "Padding": "0,0,0,12",
+                                        "Radius": "16",
+                                        "StrokeWidth": "1",
+                                        "Margin": "0,8,0,16",
+                                        "Elements": [
+                                            {
+                                                "type": "TextView",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "@product_name",
+                                                "TextSize": "22",
+                                                "TextBold": true,
+                                                "TextColor": "#1A1A1A",
+                                                "Padding": "0,0,0,12",
+                                                "type_s": "Надпись",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            },
+                                            {
+                                                "type": "LinearLayout",
+                                                "orientation": "horizontal",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Elements": [
+                                                    {
+                                                        "type": "LinearLayout",
+                                                        "orientation": "vertical",
+                                                        "height": "wrap_content",
+                                                        "width": "match_parent",
+                                                        "weight": "1",
+                                                        "Elements": [
+                                                            {
+                                                                "type": "TextView",
+                                                                "orientation": "vertical",
+                                                                "height": "wrap_content",
+                                                                "width": "match_parent",
+                                                                "Value": "Код товара",
+                                                                "TextSize": "12",
+                                                                "TextColor": "#6B7280",
+                                                                "Padding": "0,0,0,4",
+                                                                "type_s": "Надпись",
+                                                                "weight": "0",
+                                                                "width_value": "match_parent",
+                                                                "height_value": "wrap_content"
+                                                            },
+                                                            {
+                                                                "type": "TextView",
+                                                                "orientation": "vertical",
+                                                                "height": "wrap_content",
+                                                                "width": "match_parent",
+                                                                "Value": "@product_code",
+                                                                "TextSize": "16",
+                                                                "TextBold": true,
+                                                                "TextColor": "#1A1A1A",
+                                                                "type_s": "Надпись",
+                                                                "weight": "0",
+                                                                "width_value": "match_parent",
+                                                                "height_value": "wrap_content"
+                                                            }
+                                                        ],
+                                                        "type_s": "Контейнер",
+                                                        "height_value": "wrap_content",
+                                                        "width_value": "match_parent"
+                                                    },
+                                                    {
+                                                        "type": "LinearLayout",
+                                                        "orientation": "vertical",
+                                                        "height": "wrap_content",
+                                                        "width": "match_parent",
+                                                        "weight": "1",
+                                                        "Elements": [
+                                                            {
+                                                                "type": "TextView",
+                                                                "orientation": "vertical",
+                                                                "height": "wrap_content",
+                                                                "width": "match_parent",
+                                                                "Value": "Артикул",
+                                                                "TextSize": "12",
+                                                                "TextColor": "#6B7280",
+                                                                "Padding": "0,0,0,4",
+                                                                "type_s": "Надпись",
+                                                                "weight": "0",
+                                                                "width_value": "match_parent",
+                                                                "height_value": "wrap_content"
+                                                            },
+                                                            {
+                                                                "type": "TextView",
+                                                                "orientation": "vertical",
+                                                                "height": "wrap_content",
+                                                                "width": "match_parent",
+                                                                "Value": "@product_article",
+                                                                "TextSize": "16",
+                                                                "TextBold": true,
+                                                                "TextColor": "#1A1A1A",
+                                                                "type_s": "Надпись",
+                                                                "weight": "0",
+                                                                "width_value": "match_parent",
+                                                                "height_value": "wrap_content"
+                                                            }
+                                                        ],
+                                                        "height_value": "wrap_content",
+                                                        "width_value": "match_parent",
+                                                        "type_s": "Контейнер"
+                                                    }
+                                                ],
+                                                "type_s": "Контейнер",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            }
+                                        ],
+                                        "type_s": "Контейнер",
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "BackgroundColor": "#FFFFFF",
+                                        "Padding": "0,0,0,12",
+                                        "Radius": "16",
+                                        "StrokeWidth": "1",
+                                        "Margin": "0,8,0,16",
+                                        "Elements": [
+                                            {
+                                                "type": "LinearLayout",
+                                                "orientation": "horizontal",
+                                                "height": "wrap_content",
+                                                "width": "wrap_content",
+                                                "gravity_horizontal": "center",
+                                                "Elements": [
+                                                    {
+                                                        "type": "TextView",
+                                                        "orientation": "vertical",
+                                                        "height": "wrap_content",
+                                                        "width": "wrap_content",
+                                                        "gravity_horizontal": "center",
+                                                        "Value": "₽",
+                                                        "weight": "0",
+                                                        "TextSize": "20",
+                                                        "TextColor": "#059669",
+                                                        "TextBold": true,
+                                                        "Padding": "0,0,8,0",
+                                                        "type_s": "Надпись",
+                                                        "height_value": "wrap_content",
+                                                        "width_value": "wrap_content"
+                                                    },
+                                                    {
+                                                        "type": "TextView",
+                                                        "orientation": "vertical",
+                                                        "height": "wrap_content",
+                                                        "width": "wrap_content",
+                                                        "gravity_horizontal": "center",
+                                                        "Value": "@price",
+                                                        "weight": "0",
+                                                        "TextSize": "32",
+                                                        "TextColor": "#059669",
+                                                        "TextBold": true,
+                                                        "type_s": "Надпись",
+                                                        "height_value": "wrap_content",
+                                                        "width_value": "wrap_content"
+                                                    }
+                                                ],
+                                                "type_s": "Контейнер",
+                                                "weight": "0",
+                                                "width_value": "wrap_content",
+                                                "height_value": "wrap_content"
+                                            }
+                                        ],
+                                        "type_s": "Контейнер",
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "BackgroundColor": "#FFFFFF",
+                                        "Padding": "0,0,0,12",
+                                        "Radius": "16",
+                                        "StrokeWidth": "1",
+                                        "Margin": "0,8,0,16",
+                                        "Elements": [
+                                            {
+                                                "type": "TextView",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "📦 Остатки на складах",
+                                                "TextSize": "18",
+                                                "TextBold": true,
+                                                "TextColor": "#1A1A1A",
+                                                "Padding": "0,0,0,12",
+                                                "type_s": "Надпись",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            },
+                                            {
+                                                "type": "TableLayout",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "@stocks",
+                                                "type_s": "Таблица",
+                                                "height_value": "wrap_content",
+                                                "width_value": "match_parent",
+                                                "weight": "0"
+                                            }
+                                        ],
+                                        "type_s": "Контейнер",
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "BackgroundColor": "#FFFFFF",
+                                        "Padding": "20",
+                                        "Radius": "16",
+                                        "StrokeWidth": "1",
+                                        "Margin": "0,8,0,16",
+                                        "Elements": [
+                                            {
+                                                "type": "TextView",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "ℹ️ Дополнительная информация",
+                                                "TextSize": "18",
+                                                "TextBold": true,
+                                                "TextColor": "#1A1A1A",
+                                                "Padding": "0,0,0,12",
+                                                "type_s": "Надпись",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            },
+                                            {
+                                                "type": "html",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "@html_info",
+                                                "type_s": "HTML",
+                                                "height_value": "wrap_content",
+                                                "width_value": "match_parent",
+                                                "weight": "0"
+                                            }
+                                        ],
+                                        "type_s": "Контейнер",
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    }
+                                ],
+                                "type_s": "Контейнер",
+                                "height_value": "match_parent",
+                                "width_value": "match_parent",
+                                "weight": "0"
+                            },
+                            {
+                                "type": "HorizontalGallery",
+                                "orientation": "vertical",
+                                "height": "match_parent",
+                                "width": "match_parent",
+                                "Value": "@product_image",
+                                "Variable": "product_image",
+                                "type_s": "Горизонтальная галерея мультимедиа",
+                                "height_value": "match_parent",
+                                "width_value": "match_parent",
+                                "weight": "0"
+                            }
+                        ],
+                        "hideBottomBarScreen": true,
+                        "Handlers": [
+                            {
+                                "event": "onInput",
+                                "action": "runprogress",
+                                "listener": "barcode",
+                                "type": "online",
+                                "method": "ПолучитьИнформациюОТоваре",
+                                "postExecute": "[{\"action\": \"run\", \"type\": \"set\", \"method\": \"RefreshScreen\"}]",
+                                "alias": ""
+                            },
+                            {
+                                "event": "onStart",
+                                "action": "run",
+                                "listener": "",
+                                "type": "pythonscript",
+                                "method": "aW1wb3J0IGpzb24KCnNldF9kc1Byb2R1Y3RzID0geyJkYXRhc2V0IjogImRzUHJvZHVjdHMiLCAiaW5saW5lIjpUcnVlLCAic2VsZWN0IjpUcnVlLCAiaGludCI6ItCS0LLQtdC00LjRgtC1INC30L3QsNGH0LXQvdC40LUg0LTQu9GPINC/0L7QuNGB0LrQsCJ9Cmhhc2hNYXAucHV0KCJzZXRfZHNQcm9kdWN0cyIsIGpzb24uZHVtcHMoc2V0X2RzUHJvZHVjdHMsIGVuc3VyZV9hc2NpaT1GYWxzZSkp",
+                                "postExecute": "",
+                                "alias": ""
+                            },
+                            {
+                                "event": "onInput",
+                                "action": "runprogress",
+                                "listener": "search_value",
+                                "type": "online",
+                                "method": "ПолучитьИнформациюОТоваре",
+                                "postExecute": "[{\"action\": \"run\", \"type\": \"set\", \"method\": \"RefreshScreen\"}]",
+                                "alias": ""
+                            },
+                            {
+                                "event": "onInput",
+                                "action": "run",
+                                "listener": "clear_search",
+                                "type": "pythonscript",
+                                "method": "aGFzaE1hcC5wdXQoInNlYXJjaF92YWx1ZSIsICIiKQpoYXNoTWFwLnB1dCgiUmVmcmVzaFNjcmVlbiIsICIiKQ==",
+                                "postExecute": "",
+                                "alias": ""
+                            }
+                        ],
+                        "noConfirmation": true,
+                        "hideToolBarScreen": true
+                    }
+                ]
+            },
+            {
+                "type": "Process",
+                "ProcessName": "Проверка ценников",
+                "Operations": [
+                    {
+                        "type": "Operation",
+                        "Name": "Экран \"Проверка ценников\"",
+                        "Elements": [
+                            {
+                                "type": "barcode",
+                                "orientation": "vertical",
+                                "height": "match_parent",
+                                "width": "match_parent",
+                                "Variable": "barcode",
+                                "type_s": "Штрихкод",
+                                "weight": "0",
+                                "width_value": "match_parent",
+                                "height_value": "match_parent"
+                            },
+                            {
+                                "type": "LinearLayout",
+                                "orientation": "vertical",
+                                "height": "match_parent",
+                                "width": "match_parent",
+                                "BackgroundColor": "#F8F9FA",
+                                "Padding": "16,16,16,16",
+                                "Elements": [
+                                    {
+                                        "type": "TextView",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "Value": "🛒 Проверка ценника",
+                                        "TextSize": "28",
+                                        "TextBold": true,
+                                        "TextColor": "#1E40AF",
+                                        "Padding": "0,0,0,24",
+                                        "type_s": "Надпись",
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "BackgroundColor": "#FFFFFF",
+                                        "Padding": "20,20,20,20",
+                                        "Radius": "16",
+                                        "StrokeWidth": "1",
+                                        "StrokeColor": "#E5E7EB",
+                                        "Margin": "0,0,0,16",
+                                        "Elements": [
+                                            {
+                                                "type": "TextView",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "@product_name",
+                                                "TextSize": "24",
+                                                "TextBold": true,
+                                                "TextColor": "#111827",
+                                                "Padding": "0,0,0,16",
+                                                "type_s": "Надпись",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            },
+                                            {
+                                                "type": "LinearLayout",
+                                                "orientation": "horizontal",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Elements": [
+                                                    {
+                                                        "type": "LinearLayout",
+                                                        "orientation": "vertical",
+                                                        "height": "wrap_content",
+                                                        "width": 0,
+                                                        "weight": "1",
+                                                        "Margin": "0,0,0,12",
+                                                        "Elements": [
+                                                            {
+                                                                "type": "TextView",
+                                                                "orientation": "vertical",
+                                                                "height": "wrap_content",
+                                                                "width": "match_parent",
+                                                                "Value": "Код товара",
+                                                                "TextSize": "14",
+                                                                "TextColor": "#6B7280",
+                                                                "type_s": "Надпись",
+                                                                "weight": "0",
+                                                                "width_value": "match_parent",
+                                                                "height_value": "wrap_content"
+                                                            },
+                                                            {
+                                                                "type": "TextView",
+                                                                "orientation": "vertical",
+                                                                "height": "wrap_content",
+                                                                "width": "match_parent",
+                                                                "Value": "@product_code",
+                                                                "TextSize": "18",
+                                                                "TextBold": true,
+                                                                "TextColor": "#374151",
+                                                                "type_s": "Надпись",
+                                                                "weight": "0",
+                                                                "width_value": "match_parent",
+                                                                "height_value": "wrap_content"
+                                                            }
+                                                        ],
+                                                        "type_s": "Контейнер",
+                                                        "width_value": 0,
+                                                        "height_value": "wrap_content"
+                                                    },
+                                                    {
+                                                        "type": "LinearLayout",
+                                                        "orientation": "vertical",
+                                                        "height": "wrap_content",
+                                                        "width": 0,
+                                                        "weight": "1",
+                                                        "Margin": "0,0,12,12",
+                                                        "Elements": [
+                                                            {
+                                                                "type": "TextView",
+                                                                "orientation": "vertical",
+                                                                "height": "wrap_content",
+                                                                "width": "match_parent",
+                                                                "Value": "Артикул",
+                                                                "TextSize": "14",
+                                                                "TextColor": "#6B7280",
+                                                                "type_s": "Надпись",
+                                                                "weight": "0",
+                                                                "width_value": "match_parent",
+                                                                "height_value": "wrap_content"
+                                                            },
+                                                            {
+                                                                "type": "TextView",
+                                                                "orientation": "vertical",
+                                                                "height": "wrap_content",
+                                                                "width": "match_parent",
+                                                                "Value": "@product_article",
+                                                                "TextSize": "18",
+                                                                "TextBold": true,
+                                                                "TextColor": "#374151",
+                                                                "type_s": "Надпись",
+                                                                "weight": "0",
+                                                                "width_value": "match_parent",
+                                                                "height_value": "wrap_content"
+                                                            }
+                                                        ],
+                                                        "type_s": "Контейнер",
+                                                        "width_value": 0,
+                                                        "height_value": "wrap_content"
+                                                    }
+                                                ],
+                                                "type_s": "Контейнер",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            }
+                                        ],
+                                        "type_s": "Контейнер",
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "BackgroundColor": "#FFFFFF",
+                                        "Padding": "20,20,20,20",
+                                        "Radius": "16",
+                                        "StrokeWidth": "1",
+                                        "StrokeColor": "#E5E7EB",
+                                        "Margin": "0,0,0,16",
+                                        "Elements": [
+                                            {
+                                                "type": "TextView",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "Цена",
+                                                "TextSize": "16",
+                                                "TextBold": true,
+                                                "TextColor": "#374151",
+                                                "Padding": "0,0,0,12",
+                                                "type_s": "Надпись",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            },
+                                            {
+                                                "type": "LinearLayout",
+                                                "orientation": "horizontal",
+                                                "height": "wrap_content",
+                                                "width": "wrap_content",
+                                                "gravity_horizontal": "center",
+                                                "Elements": [
+                                                    {
+                                                        "type": "TextView",
+                                                        "orientation": "vertical",
+                                                        "height": "wrap_content",
+                                                        "width": "wrap_content",
+                                                        "Value": "₽",
+                                                        "TextSize": "24",
+                                                        "TextColor": "#059669",
+                                                        "TextBold": true,
+                                                        "Padding": "0,0,8,0",
+                                                        "type_s": "Надпись",
+                                                        "weight": "0",
+                                                        "height_value": "wrap_content",
+                                                        "width_value": "wrap_content"
+                                                    },
+                                                    {
+                                                        "type": "TextView",
+                                                        "orientation": "vertical",
+                                                        "height": "wrap_content",
+                                                        "width": "wrap_content",
+                                                        "Value": "@price",
+                                                        "TextSize": "40",
+                                                        "TextColor": "#059669",
+                                                        "TextBold": true,
+                                                        "type_s": "Надпись",
+                                                        "weight": "0",
+                                                        "height_value": "wrap_content",
+                                                        "width_value": "wrap_content"
+                                                    }
+                                                ],
+                                                "type_s": "Контейнер",
+                                                "weight": "0",
+                                                "width_value": "wrap_content",
+                                                "height_value": "wrap_content"
+                                            }
+                                        ],
+                                        "type_s": "Контейнер",
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": 0,
+                                        "width": "match_parent",
+                                        "weight": "1",
+                                        "type_s": "Контейнер",
+                                        "width_value": "match_parent",
+                                        "height_value": 0
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "Padding": "16,16,16,16",
+                                        "Elements": [
+                                            {
+                                                "type": "Button",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "Цена отличается ❌",
+                                                "Variable": "btn_price_differs",
+                                                "type_s": "Кнопка",
+                                                "BackgroundColor": "#EF4444",
+                                                "TextColor": "#FFFFFF",
+                                                "TextSize": "18",
+                                                "TextBold": true,
+                                                "Radius": "12",
+                                                "Padding": "16,16,16,16",
+                                                "height_value": "wrap_content",
+                                                "width_value": "match_parent",
+                                                "weight": "0"
+                                            },
+                                            {
+                                                "type": "LinearLayout",
+                                                "orientation": "vertical",
+                                                "height": "32",
+                                                "width": "match_parent",
+                                                "type_s": "Контейнер",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "32"
+                                            },
+                                            {
+                                                "type": "Button",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "Завершить проверку",
+                                                "Variable": "btn_finish_check",
+                                                "type_s": "Кнопка",
+                                                "BackgroundColor": "#3B82F6",
+                                                "TextColor": "#FFFFFF",
+                                                "TextSize": "18",
+                                                "TextBold": true,
+                                                "Radius": "12",
+                                                "Padding": "16,16,16,16",
+                                                "height_value": "wrap_content",
+                                                "width_value": "match_parent",
+                                                "weight": "0"
+                                            }
+                                        ],
+                                        "type_s": "Контейнер",
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": 0,
+                                        "width": "match_parent",
+                                        "weight": "1",
+                                        "type_s": "Контейнер",
+                                        "width_value": "match_parent",
+                                        "height_value": 0
+                                    }
+                                ],
+                                "type_s": "Контейнер",
+                                "height_value": "match_parent",
+                                "width_value": "match_parent",
+                                "weight": "0"
+                            }
+                        ],
+                        "hideBottomBarScreen": true,
+                        "Handlers": [
+                            {
+                                "event": "onStart",
+                                "action": "run",
+                                "listener": "",
+                                "type": "pythonscript",
+                                "method": "aW1wb3J0IGRhdGV0aW1lCgojINCe0YLQvNC10YfQsNC10Lwg0LTQsNGC0YMg0Lgg0LLRgNC10LzRjyDQvdCw0YfQsNC70LAg0L/RgNC+0LLQtdGA0LrQuApoYXNoTWFwLnB1dCgiY2hlY2tfZGF0ZSIsIGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLnN0cmZ0aW1lKCIlWS0lbS0lZCAlSDolTTolUyIpKQpoYXNoTWFwLnB1dCgiY2hlY2tfc3RhcnRfdGltZSIsIGRhdGV0aW1lLmRhdGV0aW1lLm5vdygpLnN0cmZ0aW1lKCIlWS0lbS0lZCAlSDolTTolUyIpKQ==",
+                                "postExecute": "",
+                                "alias": ""
+                            },
+                            {
+                                "event": "onInput",
+                                "action": "runprogress",
+                                "listener": "barcode",
+                                "type": "online",
+                                "method": "ПолучитьИнформациюОЦенеТовара",
+                                "postExecute": "[{\"action\": \"run\", \"type\": \"set\", \"method\": \"RefreshScreen\"}]",
+                                "alias": ""
+                            },
+                            {
+                                "event": "onInput",
+                                "action": "runprogress",
+                                "listener": "btn_price_differs",
+                                "type": "online",
+                                "method": "ЗагрузитьНеверныйЦенник",
+                                "postExecute": "[{\"action\": \"run\", \"type\": \"set\", \"method\": \"RefreshScreen\"}]",
+                                "alias": ""
+                            },
+                            {
+                                "event": "onInput",
+                                "action": "run",
+                                "listener": "btn_finish_check",
+                                "type": "pythonscript",
+                                "method": "aW1wb3J0IGpzb24KCnRvYXN0KCLQn9GA0L7QstC10YDQutCwINC30LDQstC10YDRiNC10L3QsCIpCmhhc2hNYXAucHV0KCJGaW5pc2hQcm9jZXNzIiwgIiIp",
+                                "postExecute": "",
+                                "alias": ""
+                            }
+                        ],
+                        "noConfirmation": true,
+                        "hideToolBarScreen": true,
+                        "noScroll": true
+                    }
+                ]
+            },
+            {
+                "type": "Process",
+                "ProcessName": "Заказы",
+                "Operations": [
+                    {
+                        "type": "Operation",
+                        "Name": "Экран \"Заказы\"",
+                        "Elements": [
+                            {
+                                "type": "LinearLayout",
+                                "orientation": "vertical",
+                                "height": "match_parent",
+                                "width": "match_parent",
+                                "BackgroundColor": "#F8F9FA",
+                                "Padding": "16,16,16,16",
+                                "Elements": [
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "BackgroundColor": "#FFFFFF",
+                                        "Padding": "16,16,16,16",
+                                        "Radius": "16",
+                                        "StrokeWidth": "1",
+                                        "StrokeColor": "#E5E7EB",
+                                        "Margin": "0,0,0,16",
+                                        "Elements": [
+                                            {
+                                                "type": "TextView",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "🛒 Заказ покупателя",
+                                                "TextSize": "24",
+                                                "TextBold": true,
+                                                "TextColor": "#1E40AF",
+                                                "Padding": "0,0,0,16",
+                                                "type_s": "Надпись",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            },
+                                            {
+                                                "type": "LinearLayout",
+                                                "orientation": "horizontal",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Elements": [
+                                                    {
+                                                        "type": "LinearLayout",
+                                                        "orientation": "vertical",
+                                                        "height": "wrap_content",
+                                                        "width": "0dp",
+                                                        "weight": "1",
+                                                        "Elements": [
+                                                            {
+                                                                "type": "TextView",
+                                                                "orientation": "vertical",
+                                                                "height": "wrap_content",
+                                                                "width": "match_parent",
+                                                                "Value": "Покупатель",
+                                                                "TextSize": "14",
+                                                                "TextColor": "#6B7280",
+                                                                "type_s": "Надпись",
+                                                                "weight": "0",
+                                                                "width_value": "match_parent",
+                                                                "height_value": "wrap_content"
+                                                            },
+                                                            {
+                                                                "type": "DataSetField",
+                                                                "orientation": "vertical",
+                                                                "height": "wrap_content",
+                                                                "width": "match_parent",
+                                                                "Value": "@dsCustomers",
+                                                                "Variable": "customer_name",
+                                                                "type_s": "Поле датасета",
+                                                                "weight": "0",
+                                                                "width_value": "match_parent",
+                                                                "height_value": "wrap_content"
+                                                            }
+                                                        ],
+                                                        "width_value": "0dp",
+                                                        "height_value": "wrap_content"
+                                                    },
+                                                    {
+                                                        "type": "LinearLayout",
+                                                        "orientation": "vertical",
+                                                        "height": "wrap_content",
+                                                        "width": "0dp",
+                                                        "weight": "1",
+                                                        "Elements": [
+                                                            {
+                                                                "type": "TextView",
+                                                                "orientation": "vertical",
+                                                                "height": "wrap_content",
+                                                                "width": "match_parent",
+                                                                "Value": "Контакт",
+                                                                "TextSize": "14",
+                                                                "TextColor": "#6B7280",
+                                                                "type_s": "Надпись",
+                                                                "weight": "0",
+                                                                "width_value": "match_parent",
+                                                                "height_value": "wrap_content"
+                                                            },
+                                                            {
+                                                                "type": "EditText",
+                                                                "orientation": "vertical",
+                                                                "height": "wrap_content",
+                                                                "width": "match_parent",
+                                                                "Variable": "customer_contact",
+                                                                "type_s": "Поле ввода",
+                                                                "TextSize": "16",
+                                                                "weight": "0",
+                                                                "width_value": "match_parent",
+                                                                "height_value": "wrap_content"
+                                                            }
+                                                        ],
+                                                        "width_value": "0dp",
+                                                        "height_value": "wrap_content"
+                                                    }
+                                                ],
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            }
+                                        ],
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "0dp",
+                                        "width": "match_parent",
+                                        "weight": "1",
+                                        "BackgroundColor": "#FFFFFF",
+                                        "Padding": "16,16,16,16",
+                                        "Radius": "16",
+                                        "StrokeWidth": "1",
+                                        "StrokeColor": "#E5E7EB",
+                                        "Margin": "0,0,0,16",
+                                        "Elements": [
+                                            {
+                                                "type": "TextView",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "Товары в заказе",
+                                                "TextSize": "18",
+                                                "TextBold": true,
+                                                "TextColor": "#1E40AF",
+                                                "Padding": "0,0,0,12",
+                                                "type_s": "Надпись",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            },
+                                            {
+                                                "type": "TableLayout",
+                                                "orientation": "vertical",
+                                                "height": "0dp",
+                                                "width": "match_parent",
+                                                "weight": "1",
+                                                "Value": "@order_items",
+                                                "type_s": "Таблица",
+                                                "width_value": "match_parent",
+                                                "height_value": "0dp"
+                                            }
+                                        ],
+                                        "width_value": "match_parent",
+                                        "height_value": "0dp"
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "BackgroundColor": "#FFFFFF",
+                                        "Padding": "16,16,16,16",
+                                        "Radius": "16",
+                                        "StrokeWidth": "1",
+                                        "StrokeColor": "#E5E7EB",
+                                        "Margin": "0,0,0,16",
+                                        "Elements": [
+                                            {
+                                                "type": "LinearLayout",
+                                                "orientation": "horizontal",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Elements": [
+                                                    {
+                                                        "type": "TextView",
+                                                        "orientation": "vertical",
+                                                        "height": "wrap_content",
+                                                        "width": "0dp",
+                                                        "weight": "1",
+                                                        "Value": "Итого:",
+                                                        "TextSize": "18",
+                                                        "TextBold": true,
+                                                        "TextColor": "#1A1A1A",
+                                                        "gravity_horizontal": "end",
+                                                        "type_s": "Надпись",
+                                                        "width_value": "0dp",
+                                                        "height_value": "wrap_content"
+                                                    },
+                                                    {
+                                                        "type": "TextView",
+                                                        "orientation": "vertical",
+                                                        "height": "wrap_content",
+                                                        "width": "wrap_content",
+                                                        "Value": "@total_amount",
+                                                        "TextSize": "20",
+                                                        "TextBold": true,
+                                                        "TextColor": "#059669",
+                                                        "type_s": "Надпись",
+                                                        "weight": "0",
+                                                        "width_value": "wrap_content",
+                                                        "height_value": "wrap_content"
+                                                    }
+                                                ],
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            }
+                                        ],
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    },
+                                    {
+                                        "type": "LinearLayout",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "Padding": "8,8,8,8",
+                                        "Elements": [
+                                            {
+                                                "type": "Button",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "Добавить товар",
+                                                "Variable": "btn_add_item",
+                                                "type_s": "Кнопка",
+                                                "BackgroundColor": "#3B82F6",
+                                                "TextColor": "#FFFFFF",
+                                                "TextSize": "16",
+                                                "TextBold": true,
+                                                "Radius": "8",
+                                                "Padding": "12,12,12,12",
+                                                "Margin": "0,0,8,0",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            },
+                                            {
+                                                "type": "Button",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "Сохранить заказ",
+                                                "Variable": "btn_save_order",
+                                                "type_s": "Кнопка",
+                                                "BackgroundColor": "#10B981",
+                                                "TextColor": "#FFFFFF",
+                                                "TextSize": "16",
+                                                "TextBold": true,
+                                                "Radius": "8",
+                                                "Padding": "12,12,12,12",
+                                                "Margin": "0,0,8,0",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            },
+                                            {
+                                                "type": "Button",
+                                                "orientation": "vertical",
+                                                "height": "wrap_content",
+                                                "width": "match_parent",
+                                                "Value": "Распечатать счет",
+                                                "Variable": "btn_print_invoice",
+                                                "type_s": "Кнопка",
+                                                "BackgroundColor": "#F59E0B",
+                                                "TextColor": "#FFFFFF",
+                                                "TextSize": "16",
+                                                "TextBold": true,
+                                                "Radius": "8",
+                                                "Padding": "12,12,12,12",
+                                                "weight": "0",
+                                                "width_value": "match_parent",
+                                                "height_value": "wrap_content"
+                                            }
+                                        ],
+                                        "weight": "0",
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    }
+                                ],
+                                "weight": "0",
+                                "width_value": "match_parent",
+                                "height_value": "match_parent"
+                            }
+                        ],
+                        "hideBottomBarScreen": true,
+                        "Handlers": [
+                            {
+                                "event": "onStart",
+                                "action": "run",
+                                "listener": "",
+                                "type": "pythonscript",
+                                "method": "aW1wb3J0IGpzb24KCiMgSW5pdGlhbGl6ZSBvcmRlciBpdGVtcyBkYXRhc2V0Cm9yZGVyX2l0ZW1zID0gQ3JlYXRlRGF0YVNldCgnb3JkZXJfaXRlbXMnKQpvcmRlcl9pdGVtcy5zZXRPcHRpb25zKGpzb24uZHVtcHMoeydoYXNoX2tleXMnOiBbJ3Byb2R1Y3RfY29kZScsICdxdWFudGl0eScsICdwcmljZSddLCAndmlld190ZW1wbGF0ZSc6ICc8Yj57cHJvZHVjdF9uYW1lfTwvYj4gLSAke3F1YW50aXR5fSB4IHtwcmljZX1cdTAyMGInLCAnbGlzdF9sYXlvdXQnOiAnc2ltcGxlJ30sIGVuc3VyZV9hc2NpaT1GYWxzZSkKmhhaXNoTWFwLnB1dCgnb3JkZXJfaXRlbXMnLCBvcmRlcl9pdGVtcykKaGFzaE1hcC5wdXQoJ3RvdGFsX2Ftb3VudCcsICcwJykKCiMgTG9hZCBjdXN0b21lcnMgaWYgbmVlZGVkCnRvYXN0KCdcdTA0MzNFa3JhbiB6YWthen92IGdvcm9kJyk=",
+                                "postExecute": "",
+                                "alias": ""
+                            },
+                            {
+                                "event": "onInput",
+                                "action": "runprogress",
+                                "listener": "btn_add_item",
+                                "type": "online",
+                                "method": "ПерейтиКПоискуТовараДляЗаказа",
+                                "postExecute": "[{\"action\": \"run\", \"type\": \"set\", \"method\": \"RefreshScreen\"}]",
+                                "alias": ""
+                            },
+                            {
+                                "event": "onInput",
+                                "action": "runprogress",
+                                "listener": "btn_save_order",
+                                "type": "online",
+                                "method": "СохранитьЗаказ",
+                                "postExecute": "[{\"action\": \"run\", \"type\": \"pythonscript\", \"method\": \"dG9hc3QoJ1vQstCw0YHRgtCw0Y8g0YHQvtC+0L3QuNC1INC/0L7Qu9GM0YHQvtC30LLRg9C10YDQtdGB0L3Qu9C00L3QuLCcp\"}]",
+                                "alias": ""
+                            },
+                            {
+                                "event": "onInput",
+                                "action": "runprogress",
+                                "listener": "btn_print_invoice",
+                                "type": "online",
+                                "method": "РаспечататьСчетЗаказа",
+                                "postExecute": "[{\"action\": \"run\", \"type\": \"pythonscript\", \"method\": \"dG9hc3QoJ1vQstCw0YHRgtCw0Y8g0YHQvtC+0L3QuNC10L3Qu9Cw0YLRg9GA0Ysg0L3QvdCw0Y8g0YHQvtC+0L3QuNC1INC/0L7Qu9GM0YHQvtC30LLQtdGA0YPQtdC8Iik=\"}]",
+                                "alias": ""
+                            },
+                            {
+                                "event": "onChange",
+                                "action": "run",
+                                "listener": "customer_name",
+                                "type": "online",
+                                "method": "ПолучитьКонтактыПокупателя",
+                                "postExecute": "",
+                                "alias": ""
+                            }
+                        ],
+                        "noConfirmation": true,
+                        "hideToolBarScreen": true
+                    }
+                ]
+            },
+            {
+                "ProcessName": "Настройки",
+                "type": "Process",
+                "Operations": [
+                    {
+                        "type": "Operation",
+                        "Name": "Настройки",
+                        "noConfirmation": true,
+                        "hideBottomBarScreen": true,
+                        "Elements": [
+                            {
+                                "type": "LinearLayout",
+                                "orientation": "vertical",
+                                "height": "wrap_content",
+                                "width": "match_parent",
+                                "Value": "Загрузки справочников",
+                                "Variable": "download",
+                                "Elements": [
+                                    {
+                                        "type": "Button",
+                                        "orientation": "vertical",
+                                        "height": "wrap_content",
+                                        "width": "match_parent",
+                                        "Value": "Загрузить номенклатуру",
+                                        "Variable": "btn_download_products",
+                                        "type_s": "Кнопка",
+                                        "weight": "0",
+                                        "Radius": "5",
+                                        "TextSize": "16",
+                                        "TextBold": true,
+                                        "width_value": "match_parent",
+                                        "height_value": "wrap_content"
+                                    }
+                                ],
+                                "height_value": "wrap_content",
+                                "width_value": "match_parent",
+                                "type_s": "Контейнер",
+                                "weight": "0"
+                            }
+                        ],
+                        "Handlers": [
+                            {
+                                "event": "onInput",
+                                "action": "runprogress",
+                                "listener": "btn_download_products",
+                                "type": "online",
+                                "method": "ПолучитьДатаСетНоменклатуры",
+                                "postExecute": "[{\"action\": \"run\", \"type\": \"pythonscript\", \"method\": \"aW1wb3J0IGpzb24KCiMg0J/RgNC+0LLQtdGA0Y/QtdC8LCDQv9C+0LvRg9GH0LXQvdGLINC70Lgg0LTQsNC90L3Ri9C1INC40LcgMdChCmlmIGhhc2hNYXAuY29udGFpbnNLZXkoImRzUHJvZHVjdHMiKToKICAgICMg0J/QvtC70YPRh9Cw0LXQvCDQuNC70Lgg0YHQvtC30LTQsNC10Lwg0LTQsNGC0LDRgdC10YIKICAgIGRzUHJvZHVjdHMgPSBDcmVhdGVEYXRhU2V0KCJkc1Byb2R1Y3RzIikKICAgICMg0KPRgdGC0LDQvdCw0LLQu9C40LLQsNC10Lwg0L7Qv9GG0LjQuCDQtNCw0YLQsNGB0LXRgtCwCiAgICBkc1Byb2R1Y3RzLnNldE9wdGlvbnMoanNvbi5kdW1wcyh7Imhhc2hfa2V5cyI6WyJuYW1lIiwgImNvZGUiLCAiYXJ0aWNsZSIsICJiYXJjb2RlIl0sICJzZWFyY2hfa2V5cyI6Im5hbWUsY29kZSxhcnRpY2xlLGJhcmNvZGUiLCAidmlld190ZW1wbGF0ZSI6IjxiPnthcnRpY2xlfTwvYj4ge25hbWV9IiwgImxpc3RfbGF5b3V0IjogInByb2R1Y3RzX2luZm8ifSwgZW5zdXJlX2FzY2lpPUZhbHNlKSkKCiAgICAjINCU0L7QsdCw0LLQu9GP0LXQvCDQtNCw0L3QvdGL0LUg0LIg0LTQsNGC0LDRgdC10YIKICAgIGRzUHJvZHVjdHMucHV0KGhhc2hNYXAuZ2V0KCJkc1Byb2R1Y3RzIikpCiAgICAjINCh0L7RhdGA0LDQvdGP0LXQvCDQtNCw0YLQsNGB0LXRgiDQvdCwINC00LjRgdC6CiAgICBkc1Byb2R1Y3RzLnNhdmUoKQogICAgdG9hc3QoItCX0LDQs9GA0YPQt9C60LAg0LfQsNCy0LXRgNGI0LXQvdCwLi4uIikKZWxzZToKICAgIHRvYXN0KCLQntGI0LjQsdC60LA6INC00LDQvdC90YvQtSDQvdC+0LzQtdC90LrQu9Cw0YLRg9GA0Ysg0L3QtSDQv9C+0LvRg9GH0LXQvdGLIik=\"}]",
+                                "alias": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "Layouts": [
+            {
+                "type": "LinearLayout",
+                "orientation": "horizontal",
+                "height": "wrap_content",
+                "width": "match_parent",
+                "Variable": "stocks_info",
+                "Elements": [
+                    {
+                        "type": "TextView",
+                        "orientation": "vertical",
+                        "height": "wrap_content",
+                        "width": "match_parent",
+                        "Value": "@warehouse",
+                        "weight": "1",
+                        "type_s": "Надпись",
+                        "height_value": "wrap_content",
+                        "width_value": "match_parent",
+                        "TextSize": "18",
+                        "TextColor": "#1A1A1A",
+                        "TextBold": true
+                    },
+                    {
+                        "type": "TextView",
+                        "orientation": "vertical",
+                        "height": "wrap_content",
+                        "width": "match_parent",
+                        "Value": "@quantity",
+                        "weight": "1",
+                        "type_s": "Надпись",
+                        "height_value": "wrap_content",
+                        "width_value": "match_parent",
+                        "TextSize": "20",
+                        "TextColor": "#00CC00",
+                        "TextBold": true
+                    }
+                ]
+            },
+            {
+                "type": "LinearLayout",
+                "orientation": "vertical",
+                "height": "wrap_content",
+                "width": "match_parent",
+                "Variable": "products_info",
+                "BackgroundColor": "#F5F5F5",
+                "Padding": "10",
+                "Radius": "8",
+                "Elements": [
+                    {
+                        "type": "TextView",
+                        "orientation": "vertical",
+                        "height": "wrap_content",
+                        "width": "match_parent",
+                        "Value": "@name",
+                        "TextSize": "18",
+                        "TextBold": true,
+                        "TextColor": "#212121",
+                        "Padding": "5",
+                        "type_s": "Надпись",
+                        "weight": "0",
+                        "width_value": "match_parent",
+                        "height_value": "wrap_content"
+                    },
+                    {
+                        "type": "LinearLayout",
+                        "orientation": "horizontal",
+                        "height": "wrap_content",
+                        "width": "match_parent",
+                        "Elements": [
+                            {
+                                "type": "TextView",
+                                "orientation": "vertical",
+                                "height": "wrap_content",
+                                "width": "wrap_content",
+                                "Value": "Код: ",
+                                "TextSize": "14",
+                                "TextColor": "#757575",
+                                "type_s": "Надпись",
+                                "weight": "0",
+                                "width_value": "wrap_content",
+                                "height_value": "wrap_content"
+                            },
+                            {
+                                "type": "TextView",
+                                "orientation": "vertical",
+                                "height": "wrap_content",
+                                "width": "wrap_content",
+                                "Value": "@code",
+                                "TextSize": "14",
+                                "TextBold": true,
+                                "TextColor": "#212121",
+                                "type_s": "Надпись",
+                                "weight": "0",
+                                "width_value": "wrap_content",
+                                "height_value": "wrap_content"
+                            }
+                        ],
+                        "type_s": "Контейнер",
+                        "weight": "0",
+                        "width_value": "match_parent",
+                        "height_value": "wrap_content"
+                    },
+                    {
+                        "type": "LinearLayout",
+                        "orientation": "horizontal",
+                        "height": "wrap_content",
+                        "width": "match_parent",
+                        "Elements": [
+                            {
+                                "type": "TextView",
+                                "orientation": "vertical",
+                                "height": "wrap_content",
+                                "width": "wrap_content",
+                                "Value": "Артикул: ",
+                                "TextSize": "14",
+                                "TextColor": "#757575",
+                                "type_s": "Надпись",
+                                "weight": "0",
+                                "width_value": "wrap_content",
+                                "height_value": "wrap_content"
+                            },
+                            {
+                                "type": "TextView",
+                                "orientation": "vertical",
+                                "height": "wrap_content",
+                                "width": "wrap_content",
+                                "Value": "@article",
+                                "TextSize": "14",
+                                "TextBold": true,
+                                "TextColor": "#212121",
+                                "type_s": "Надпись",
+                                "weight": "0",
+                                "width_value": "wrap_content",
+                                "height_value": "wrap_content"
+                            }
+                        ],
+                        "type_s": "Контейнер",
+                        "weight": "0",
+                        "width_value": "match_parent",
+                        "height_value": "wrap_content"
+                    },
+                    {
+                        "type": "LinearLayout",
+                        "orientation": "horizontal",
+                        "height": "wrap_content",
+                        "width": "match_parent",
+                        "Elements": [
+                            {
+                                "type": "TextView",
+                                "orientation": "vertical",
+                                "height": "wrap_content",
+                                "width": "wrap_content",
+                                "Value": "Штрихкод: ",
+                                "TextSize": "14",
+                                "TextColor": "#757575",
+                                "type_s": "Надпись",
+                                "weight": "0",
+                                "width_value": "wrap_content",
+                                "height_value": "wrap_content"
+                            },
+                            {
+                                "type": "TextView",
+                                "orientation": "vertical",
+                                "height": "wrap_content",
+                                "width": "wrap_content",
+                                "Value": "@barcode",
+                                "TextSize": "14",
+                                "TextBold": true,
+                                "TextColor": "#212121",
+                                "type_s": "Надпись",
+                                "weight": "0",
+                                "width_value": "wrap_content",
+                                "height_value": "wrap_content"
+                            }
+                        ],
+                        "type_s": "Контейнер",
+                        "weight": "0",
+                        "width_value": "match_parent",
+                        "height_value": "wrap_content"
+                    }
+                ]
+            }
+        ],
+        "CommonHandlers": [
+            {
+                "event": "onLaunch",
+                "action": "run",
+                "listener": "",
+                "type": "pythonscript",
+                "method": "aW1wb3J0IGpzb24KCiMg0JjQvdC40YbQuNCw0LvQuNC30LDRhtC40Y8g0LTQsNC90L3Ri9GFCmRzUHJvZHVjdHMgPSBDcmVhdGVEYXRhU2V0KCJkc1Byb2R1Y3RzIikKZHNQcm9kdWN0cy5zZXRPcHRpb25zKGpzb24uZHVtcHMoewogICAgImhhc2hfa2V5cyI6IFsibmFtZSIsICJjb2RlIiwgImFydGljbGUiLCAiYmFyY29kZSJdLAogICAgInNlYXJjaF9rZXlzIjogIm5hbWUsY29kZSxhcnRpY2xlLGJhcmNvZGUiLAogICAgInZpZXdfdGVtcGxhdGUiOiAiPGI+e2FydGljbGV9PC9iPiB7bmFtZX0iLAogICAgImxpc3RfbGF5b3V0IjogInByb2R1Y3RzX2luZm8iCn0sIGVuc3VyZV9hc2NpaT1GYWxzZSkpCgppZiBkc1Byb2R1Y3RzLmlzU2F2ZWQoKToKICAgIGRzUHJvZHVjdHMubG9hZCgpCgojINCY0L3QuNGG0LjQsNC70LjQt9Cw0YbQuNGPINC/0L7Qu9GM0LfQvtCy0LDRgtC10LvQtdC5CmRzVXNlcnMgPSBDcmVhdGVEYXRhU2V0KCJkc1VzZXJzIikKIyDQo9GB0YLQsNC90LDQstC70LjQstCw0LXQvCDQvtC/0YbQuNC4INC00LDRgtCw0YHQtdGC0LAKZHNVc2Vycy5zZXRPcHRpb25zKGpzb24uZHVtcHMoewogICAgImhhc2hfa2V5cyI6IFsibmFtZSIsICJmdWxsX25hbWUiXSwKICAgICJzZWFyY2hfa2V5cyI6ICJuYW1lLGZ1bGxfbmFtZSIsCiAgICAidmlld190ZW1wbGF0ZSI6ICI8Yj57bmFtZX08L2I+ICh7ZnVsbF9uYW1lfSkiCn0sIGVuc3VyZV9hc2NpaT1GYWxzZSkpCgojINCf0L7Qv9GL0YLQsNC10LzRgdGPINC30LDQs9GA0YPQt9C40YLRjCDQv9C+0LvRjNC30L7QstCw0YLQtdC70LXQuSDRgSDQtNC40YHQutCwCmlmIGRzVXNlcnMuaXNTYXZlZCgpOgogICAgZHNVc2Vycy5sb2FkKCkKCiMg0J7RgtC80LXRh9Cw0LXQvCDQs9C70L7QsdCw0LvRjNC90YvQtSDQv9C10YDQtdC80LXQvdC90YvQtQpoYXNoTWFwLnB1dCgiX2lzX2F1dGhvcml6ZWQiLCAiZmFsc2UiKQpoYXNoTWFwLnB1dCgiX2N1cnJlbnRfdXNlcl9ndWlkIiwgIiIpCmhhc2hNYXAucHV0KCJfY3VycmVudF91c2VyX25hbWUiLCAiIikKaGFzaE1hcC5wdXQoIlN0YXJ0UHJvY2VzcyIsICLRkNCy0YLQvtGA0LjQt9Cw0YbQuNGPINC/0L7Qu9GM0LfQvtCy0LDRgtC10LvQu9C5Iik=",
+                "postExecute": "",
+                "alias": ""
+            },
+            {
+                "event": "onInputMenu",
+                "action": "run",
+                "listener": "btn_search_product",
+                "type": "set",
+                "method": "StartProcess = Поиск товара",
+                "postExecute": "",
+                "alias": ""
+            },
+            {
+                "event": "onInputMenu",
+                "action": "run",
+                "listener": "btn_check_prices",
+                "type": "set",
+                "method": "StartProcess = Проверка ценников",
+                "postExecute": "",
+                "alias": ""
+            },
+            {
+                "event": "onInputMenu",
+                "action": "run",
+                "listener": "btn_orders",
+                "type": "set",
+                "method": "StartProcess = Заказы",
+                "postExecute": "",
+                "alias": ""
+            },
+            {
+                "event": "onInputMenu",
+                "action": "run",
+                "listener": "btn_settings",
+                "type": "set",
+                "method": "StartProcess = Настройки",
+                "postExecute": "",
+                "alias": ""
+            },
+            {
+                "event": "onInputMenu",
+                "action": "break",
+                "listener": "btn_logout",
+                "type": "",
+                "method": "",
+                "postExecute": "",
+                "alias": ""
+            }
+        ],
+        "host_uid": "0effe55f251048279f5e8aac3b2c88d8",
+        "ConfigurationFileName": "Megastroy_UT11_2025.9.23.ui",
+        "agent": false,
+        "ForegroundService": false,
+        "StopForegroundServiceOnExit": false,
+        "BroadcastIntent": "",
+        "BroadcastVariable": "",
+        "FaceRecognitionURL": "",
+        "OnKeyboardMain": false,
+        "LaunchProcess": "Меню",
+        "LaunchVar": "",
+        "MenuWebTemplate": "",
+        "Launch": "Process",
+        "HTMLHead": "",
+        "HTMLdocument_ready": "",
+        "PyGeneral": "",
+        "PelicanInit": "",
+        "ConfigurationSettings": {
+            "dictionaries": "",
+            "vendor": "",
+            "vendor_url": "",
+            "vendor_password": "",
+            "handler_split_mode": false,
+            "handler_url": "",
+            "handler_password": ""
+        },
+        "ConfigurationTags": "off-line",
+        "uid": "7e0136a4e24747f5b0a9fa2367e4e6f6"
+    }
+}
