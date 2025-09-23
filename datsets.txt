@@ -1,0 +1,170 @@
+#Dataset engine
+
+Datasets are Python-accessible classes for structured data storage. Similar to dictionaries but with additional persistence features.
+The dataset must be created before use. This can be put in the onLaunch event in the CommonHandlers array of the configuration if the dataset should be accessed from screens. But this can also be done in the screen.
+To create a dataset, use the CreateDataSet(dataset_name) method.
+
+Example(python):
+datasrv = CreateDataSet("goods") #create the goods dataset
+
+To get a dataset object previously created by the CreateDataSet command, use the GetDataSet(dataset_name) method
+CreateDataSet, GetDataSet are imported by default.
+
+A reference to an object of any dataset in SimpleUI has the form dataset_name$record_id. This is a universal reference in the system. You can always get a record of any dataset via DataSets.GetObjectStr(<reference>) or a view of an element via DataSets.GetView(<reference>). DataSets – already imported, no need to do any additional import.
+
+Next, the following methods are available for the dataset object:
+
+1) put(serialized_to_string_JSON_array) – adding records to the dataset. Each record is a JSON object. The parameter is a sterilized JSON array of objects. Records are stored in RAM, they will not be available after the application is restarted. The record always contains the key “_id”. It can be specified explicitly when adding records, or, if not specified, it will be generated automatically
+
+2) save() – writing the entire dataset to disk
+
+3) load() – loading the dataset into RAM from disk
+
+4) getStr(key, value) – getting the value by key. Returns a JSON object serialized into a string or None
+Example(python):
+goods = GetDataSet("goods")
+res = json.loads(goods.getStr("barcode","4690626023178"))
+
+5) setOptions(options) options is a json object of the form {"hash_keys":[<keys>,…],”key”:[<keys>,]}. All options are optional.
+Possible dataset options:
+• search_keys - keys (separated by commas) by which the search in the list is performed
+• view_template - presentation of an element in a dataset field. Keys are specified in the format {<key>}, it is possible to use html tags
+• list_layout - container for a list of choices from dataset fields
+• hash_keys - an array of field names by which a hash index will be created.
+
+6) copy(new_dataset_name) copies the dataset to a new one, returns a link to the dataset
+
+7) copy(new_dataset_name,start_row,end_row) copies the dataset to a new one by a range of rows
+
+8) sort(field_name) sorting.
+
+Example(python):
+my.sort("-name") #descending by name
+my.sort("name") #ascending by name
+
+9) cut() trim a range of strings
+
+Example(python):
+
+my.cut(0,3)
+
+10) clear() delete records
+11) isSaved() returns True if the dataset is saved
+
+Example of initializing and saving a dataset:
+
+datasrv = CreateDataSet("goods") #create a goods dataset
+#specify hash indexes, search fields by string, record presentation template
+datasrv.setOptions(json_to_str({"hash_keys":["article","barcode"],"search_keys":"name","view_template":"{name} , <b>{article}</b>"}))
+
+#add records to the dataset
+goods_list = []
+goods_list.append({"article":"AUD2071","name":"Table","barcode":"4690626023178"})
+goods_list.append({"article":"AUD2075","name":"Chair","barcode":"6924922203797"})
+goods_list.append({"article":"AUD2076","name":"Lamp"})
+goods_list.append({"article":"AUD2076","name":"Drum"})
+datasrv.put(json_to_str(goods_list))
+
+#write the dataset to disk
+datasrv.save()
+
+When using the dataset mechanism as a data source for lists, you can specify a link to the dataset name in the list variable using the Э~Э prefix
+
+Example:
+
+j = { "customtable": {
+"layout": "^list_3_lines",
+"tabledata":"~goods"}
+}
+
+hashMap.put("table",json_to_str(j))
+
+When clicked, a CardsClick event is generated and a universal link (<dataset name>$<record_id>) appears in the variable stack in selected_card_key and also in selected_card_data – the dataset record data as a JSON string
+In the list options, you can define a custom search by list. You need to specify method – either text or levenshtein, keys (separated by commas) – the fields by which the search will occur and min_length (optional) the minimum length from which the search begins.
+
+Example with search by string occurrence
+
+j = { "customtable":
+{
+"options":{
+"search_enabled":True,
+"search_submit":True,
+"dataset_search":{"method":"text", "keys":"name"}
+},
+"layout": "^list_3_lines",
+"tabledata":"~big"
+}
+}
+
+Example with fuzzy search:
+
+j = { "customtable":
+{
+"options":{
+"search_enabled":True,
+"search_submit":True,
+"dataset_search":{"method":"levenshtein", "keys":"name","min_length":3}
+},
+"layout": "^list_3_lines",
+"tabledata":"~big"
+}
+}
+
+Dataset field
+To select an element (record) of a dataset in a container (LinearLayout) you can place "dataset field" element with the DataSetField type. The placement rules are the same as for any other container element
+
+In layout:
+{
+"type": "DataSetField",
+"Value": "goods",
+"Variable": "product"
+}
+
+In Value, either the dataset name as in the example above, or the settings string is specified
+
+When selecting a field, an event with listener= element variable (Variable key) occurs
+If not the dataset name is used, but the "settings string", a JSON string with keys is specified:
+• dataset (required) – dataset name
+• inline – search by string directly in the field
+• select – a button for selecting from the list is added
+• spinner – selection from the list (analogous to a drop-down list) replaces the inline option
+• hint - hint
+
+Example:
+
+In layout:
+{
+"type": "DataSetField",
+"Value": "@filed_options",
+"Variable": "product"
+}
+
+In onStart handler:
+
+filed_options = {"dataset":"goods",
+"inline":True,"select":True, "hint":"enter product"}
+hashMap.put("filed_options ",json_to_str(field2))
+
+To set the default value (the value that will be shown after the screen refreshes), you need to place a reference to the dataset element in the dataset field variable in the format dataset_name$record_ID
+
+Example:
+
+In layout:
+
+{
+"type": "DataSetField",
+"Value": "vat",
+"Variable": "vat_value"
+}
+
+In onStart handler:
+
+datasrv = CreateDataSet("vat")
+datasrv.setOptions(json_to_str({"search_keys":"name","view_template":"Rate - {name}"}))
+nds_list = []
+nds_list .append({"name":"10%","_id":"VAT10"})
+nds_list .append({"name":"20%","_id":" VAT 20"})
+nds_list .append({"name":"0%","_id":" VAT 0"})
+datasrv.put(json_to_str(vat_list))
+#setting the value
+hashMap.put("vat_value","vat$VAT20")

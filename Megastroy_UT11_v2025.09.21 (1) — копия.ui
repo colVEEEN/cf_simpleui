@@ -1,268 +1,9 @@
 {
     "ClientConfiguration": {
-        "ConfigurationName": "Мегастрой",
+        "ConfigurationName": "Мегастрой УТ11",
         "ConfigurationDescription": "",
-        "ConfigurationVersion": "2025.9.23",
+        "ConfigurationVersion": "2025.08.19",
         "Processes": [
-            {
-                "type": "Process",
-                "ProcessName": "Меню",
-                "Operations": [
-                    {
-                        "type": "Operation",
-                        "Name": "Главное меню",
-                        "Elements": [
-                            {
-                                "type": "LinearLayout",
-                                "orientation": "vertical",
-                                "height": "match_parent",
-                                "width": "match_parent",
-                                "BackgroundColor": "#F8F9FA",
-                                "Padding": "24,24,24,24",
-                                "Elements": [
-                                    {
-                                        "type": "LinearLayout",
-                                        "orientation": "vertical",
-                                        "height": "wrap_content",
-                                        "width": "match_parent",
-                                        "BackgroundColor": "#FFFFFF",
-                                        "Padding": "32,32,32,32",
-                                        "Radius": "16",
-                                        "StrokeWidth": "1",
-                                        "StrokeColor": "#E5E7EB",
-                                        "Margin": "0,0,0,20",
-                                        "Elements": [
-                                            {
-                                                "type": "TextView",
-                                                "orientation": "vertical",
-                                                "height": "wrap_content",
-                                                "width": "match_parent",
-                                                "Value": "🏪 Мегастрой",
-                                                "TextSize": "28",
-                                                "TextBold": true,
-                                                "TextColor": "#1E40AF",
-                                                "gravity_horizontal": "center",
-                                                "Padding": "0,0,0,12",
-                                                "type_s": "Надпись",
-                                                "weight": "0",
-                                                "width_value": "match_parent",
-                                                "height_value": "wrap_content"
-                                            },
-                                            {
-                                                "type": "TextView",
-                                                "orientation": "vertical",
-                                                "height": "wrap_content",
-                                                "width": "match_parent",
-                                                "Value": "Выберите раздел для работы",
-                                                "TextSize": "16",
-                                                "TextColor": "#6B7280",
-                                                "gravity_horizontal": "center",
-                                                "type_s": "Надпись",
-                                                "weight": "0",
-                                                "width_value": "match_parent",
-                                                "height_value": "wrap_content"
-                                            }
-                                        ],
-                                        "type_s": "Контейнер",
-                                        "height_value": "wrap_content",
-                                        "width_value": "match_parent",
-                                        "weight": "0"
-                                    },
-                                    {
-                                        "type": "LinearLayout",
-                                        "orientation": "vertical",
-                                        "height": "wrap_content",
-                                        "width": "match_parent",
-                                        "BackgroundColor": "#FFFFFF",
-                                        "Padding": "24,24,24,24",
-                                        "Radius": "16",
-                                        "StrokeWidth": "1",
-                                        "StrokeColor": "#E5E7EB",
-                                        "Margin": "0,0,0,16",
-                                        "Elements": [
-                                            {
-                                                "type": "Button",
-                                                "orientation": "vertical",
-                                                "height": "wrap_content",
-                                                "width": "match_parent",
-                                                "Value": "🔍 Поиск товара",
-                                                "Variable": "btn_search_product",
-                                                "type_s": "Кнопка",
-                                                "BackgroundColor": "#3B82F6",
-                                                "TextColor": "#FFFFFF",
-                                                "TextSize": "18",
-                                                "TextBold": true,
-                                                "Radius": "12",
-                                                "Padding": "20,20,20,20",
-                                                "weight": "0",
-                                                "width_value": "match_parent",
-                                                "height_value": "wrap_content"
-                                            }
-                                        ],
-                                        "type_s": "Контейнер",
-                                        "weight": "0",
-                                        "width_value": "match_parent",
-                                        "height_value": "wrap_content"
-                                    },
-                                    {
-                                        "type": "LinearLayout",
-                                        "orientation": "vertical",
-                                        "height": "wrap_content",
-                                        "width": "match_parent",
-                                        "BackgroundColor": "#FFFFFF",
-                                        "Padding": "24,24,24,24",
-                                        "Radius": "16",
-                                        "StrokeWidth": "1",
-                                        "StrokeColor": "#E5E7EB",
-                                        "Margin": "0,0,0,16",
-                                        "Elements": [
-                                            {
-                                                "type": "Button",
-                                                "orientation": "vertical",
-                                                "height": "wrap_content",
-                                                "width": "match_parent",
-                                                "Value": "🛒 Проверка ценников",
-                                                "Variable": "btn_check_prices",
-                                                "type_s": "Кнопка",
-                                                "BackgroundColor": "#059669",
-                                                "TextColor": "#FFFFFF",
-                                                "TextSize": "18",
-                                                "TextBold": true,
-                                                "Radius": "12",
-                                                "Padding": "20,20,20,20",
-                                                "weight": "0",
-                                                "width_value": "match_parent",
-                                                "height_value": "wrap_content"
-                                            }
-                                        ],
-                                        "type_s": "Контейнер",
-                                        "weight": "0",
-                                        "width_value": "match_parent",
-                                        "height_value": "wrap_content"
-                                    },
-                                    {
-                                        "type": "LinearLayout",
-                                        "orientation": "vertical",
-                                        "height": "wrap_content",
-                                        "width": "match_parent",
-                                        "BackgroundColor": "#FFFFFF",
-                                        "Padding": "24,24,24,24",
-                                        "Radius": "16",
-                                        "StrokeWidth": "1",
-                                        "StrokeColor": "#E5E7EB",
-                                        "Margin": "0,0,0,16",
-                                        "Elements": [
-                                            {
-                                                "type": "Button",
-                                                "orientation": "vertical",
-                                                "height": "wrap_content",
-                                                "width": "match_parent",
-                                                "Value": "📋 Заказы покупателей",
-                                                "Variable": "btn_orders",
-                                                "type_s": "Кнопка",
-                                                "BackgroundColor": "#7C3AED",
-                                                "TextColor": "#FFFFFF",
-                                                "TextSize": "18",
-                                                "TextBold": true,
-                                                "Radius": "12",
-                                                "Padding": "20,20,20,20",
-                                                "weight": "0",
-                                                "width_value": "match_parent",
-                                                "height_value": "wrap_content"
-                                            }
-                                        ],
-                                        "type_s": "Контейнер",
-                                        "weight": "0",
-                                        "width_value": "match_parent",
-                                        "height_value": "wrap_content"
-                                    },
-                                    {
-                                        "type": "LinearLayout",
-                                        "orientation": "vertical",
-                                        "height": "wrap_content",
-                                        "width": "match_parent",
-                                        "BackgroundColor": "#FFFFFF",
-                                        "Padding": "24,24,24,24",
-                                        "Radius": "16",
-                                        "StrokeWidth": "1",
-                                        "StrokeColor": "#E5E7EB",
-                                        "Margin": "0,0,0,16",
-                                        "Elements": [
-                                            {
-                                                "type": "Button",
-                                                "orientation": "vertical",
-                                                "height": "wrap_content",
-                                                "width": "match_parent",
-                                                "Value": "⚙️ Настройки",
-                                                "Variable": "btn_settings",
-                                                "type_s": "Кнопка",
-                                                "BackgroundColor": "#6B7280",
-                                                "TextColor": "#FFFFFF",
-                                                "TextSize": "18",
-                                                "TextBold": true,
-                                                "Radius": "12",
-                                                "Padding": "20,20,20,20",
-                                                "weight": "0",
-                                                "width_value": "match_parent",
-                                                "height_value": "wrap_content"
-                                            }
-                                        ],
-                                        "type_s": "Контейнер",
-                                        "weight": "0",
-                                        "width_value": "match_parent",
-                                        "height_value": "wrap_content"
-                                    },
-                                    {
-                                        "type": "LinearLayout",
-                                        "orientation": "vertical",
-                                        "height": "wrap_content",
-                                        "width": "match_parent",
-                                        "BackgroundColor": "#FFFFFF",
-                                        "Padding": "24,24,24,24",
-                                        "Radius": "16",
-                                        "StrokeWidth": "1",
-                                        "StrokeColor": "#E5E7EB",
-                                        "Margin": "0,0,0,16",
-                                        "Elements": [
-                                            {
-                                                "type": "Button",
-                                                "orientation": "vertical",
-                                                "height": "wrap_content",
-                                                "width": "match_parent",
-                                                "Value": "🚪 Выход",
-                                                "Variable": "btn_logout",
-                                                "type_s": "Кнопка",
-                                                "BackgroundColor": "#EF4444",
-                                                "TextColor": "#FFFFFF",
-                                                "TextSize": "18",
-                                                "TextBold": true,
-                                                "Radius": "12",
-                                                "Padding": "20,20,20,20",
-                                                "weight": "0",
-                                                "width_value": "match_parent",
-                                                "height_value": "wrap_content"
-                                            }
-                                        ],
-                                        "type_s": "Контейнер",
-                                        "weight": "0",
-                                        "width_value": "match_parent",
-                                        "height_value": "wrap_content"
-                                    }
-                                ],
-                                "type_s": "Контейнер",
-                                "height_value": "match_parent",
-                                "width_value": "match_parent",
-                                "weight": "0"
-                            }
-                        ],
-                        "hideBottomBarScreen": true,
-                        "Handlers": [],
-                        "noConfirmation": true,
-                        "hideToolBarScreen": true,
-                        "noScroll": true
-                    }
-                ]
-            },
             {
                 "type": "Process",
                 "ProcessName": "Авторизация",
@@ -441,7 +182,7 @@
                                 "action": "run",
                                 "listener": "btn_login",
                                 "type": "pythonscript",
-                                "method": "aW1wb3J0IGpzb24KCiMg0J/RgNC+0LLQtdGA0Y/QtdC8LCDQstGL0LHRgNCw0L0g0LvQuCDQv9C+0LvRjNC30L7QstCw0YLQtdC70YwKdXNlcl9ndWlkID0gIiIKdXNlcl9uYW1lID0gIiIKdXNlcl9kYXRhID0gTm9uZQoKIyDQodC/0L7RgdC+0LEgMTog0YfQtdGA0LXQtyBDYXJkc0NsaWNrICjQstGL0LHQvtGAINC40Lcg0YHQv9C40YHQutCwKQppZiBoYXNoTWFwLmNvbnRhaW5zS2V5KCJzZWxlY3RlZF9jYXJkX2tleSIpIGFuZCBoYXNoTWFwLmdldCgic2VsZWN0ZWRfY2FyZF9rZXkiKToKICAgIHNlbGVjdGVkX2tleSA9IGhhc2hNYXAuZ2V0KCJzZWxlY3RlZF9jYXJkX2tleSIpCiAgICBpZiAiJCIgaW4gc2VsZWN0ZWRfa2V5OgogICAgICAgIGRhdGFzZXRfbmFtZSwgcmVjb3JkX2lkID0gc2VsZWN0ZWRfa2V5LnNwbGl0KCIkIiwgMSkKICAgICAgICAKICAgICAgICAjINCY0YHQv9C+0LvRjNC30YPQtdC8IHNlbGVjdGVkX2NhcmRfZGF0YSDQtdGB0LvQuCDQtNC+0YHRgtGD0L/QvdCwCiAgICAgICAgaWYgaGFzaE1hcC5jb250YWluc0tleSgic2VsZWN0ZWRfY2FyZF9kYXRhIikgYW5kIGhhc2hNYXAuZ2V0KCJzZWxlY3RlZF9jYXJkX2RhdGEiKToKICAgICAgICAgICAgdXNlcl9kYXRhID0ganNvbi5sb2FkcyhoYXNoTWFwLmdldCgic2VsZWN0ZWRfY2FyZF9kYXRhIikpCiAgICAgICAgZWxzZToKICAgICAgICAgICAgIyDQmNC90LDRh9C1INC/0L7Qu9GD0YfQsNC10Lwg0LjQtyDQtNCw0YLQsNGB0LXRgtCwCiAgICAgICAgICAgIGRzX3VzZXJzID0gR2V0RGF0YVNldCgiZHNVc2VycyIpCiAgICAgICAgICAgIGlmIGRzX3VzZXJzOgogICAgICAgICAgICAgICAgdXNlcl9kYXRhX2pzb24gPSBkc191c2Vycy5nZXRTdHIoIl9pZCIsIHJlY29yZF9pZCkKICAgICAgICAgICAgICAgIGlmIHVzZXJfZGF0YV9qc29uOgogICAgICAgICAgICAgICAgICAgIHVzZXJfZGF0YSA9IGpzb24ubG9hZHModXNlcl9kYXRhX2pzb24pCgojINCh0L/QvtGB0L7QsSAyOiDRh9C10YDQtdC3IERhdGFTZXRGaWVsZCBpbmxpbmUgKNGA0YPRh9C90L7QuSDQstCy0L7QtCkKZWxpZiBoYXNoTWFwLmNvbnRhaW5zS2V5KCJzZWxlY3RlZF91c2VyIikgYW5kIGhhc2hNYXAuZ2V0KCJzZWxlY3RlZF91c2VyIik6CiAgICBzZWxlY3RlZF91c2VyID0gaGFzaE1hcC5nZXQoInNlbGVjdGVkX3VzZXIiKQogICAgaWYgIiQiIGluIHNlbGVjdGVkX3VzZXI6CiAgICAgICAgcGFydHMgPSBzZWxlY3RlZF91c2VyLnNwbGl0KCIkIikKICAgICAgICBpZiBsZW4ocGFydHMpID09IDI6CiAgICAgICAgICAgIHJlY29yZF9pZCA9IHBhcnRzWzFdCiAgICAgICAgICAgIGRzX3VzZXJzID0gR2V0RGF0YVNldCgiZHNVc2VycyIpCiAgICAgICAgICAgIGlmIGRzX3VzZXJzOgogICAgICAgICAgICAgICAgdXNlcl9kYXRhX2pzb24gPSBkc191c2Vycy5nZXRTdHIoIl9pZCIsIHJlY29yZF9pZCkKICAgICAgICAgICAgICAgIGlmIHVzZXJfZGF0YV9qc29uOgogICAgICAgICAgICAgICAgICAgIHVzZXJfZGF0YSA9IGpzb24ubG9hZHModXNlcl9kYXRhX2pzb24pCgojINCV0YHQu9C4INC90LDRiNC70Lgg0LTQsNC90L3Ri9C1INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjwppZiB1c2VyX2RhdGE6CiAgICB1c2VyX2d1aWQgPSB1c2VyX2RhdGEuZ2V0KCJ1aWQiLCAiIikKICAgIHVzZXJfbmFtZSA9IHVzZXJfZGF0YS5nZXQoImZ1bGxfbmFtZSIsIHVzZXJfZGF0YS5nZXQoIm5hbWUiLCAiIikpCiAgICAKICAgIGlmIHVzZXJfZ3VpZCBhbmQgdXNlcl9uYW1lOgogICAgICAgICMg0JfQsNC/0LjRgdGL0LLQsNC10Lwg0LIg0LPQu9C+0LHQsNC70YzQvdGL0LUg0L/QtdGA0LXQvNC10L3QvdGL0LUKICAgICAgICBoYXNoTWFwLnB1dCgiX2N1cnJlbnRfdXNlcl9ndWlkIiwgdXNlcl9ndWlkKQogICAgICAgIGhhc2hNYXAucHV0KCJfY3VycmVudF91c2VyX25hbWUiLCB1c2VyX25hbWUpCiAgICAgICAgaGFzaE1hcC5wdXQoIl9pc19hdXRob3JpemVkIiwgInRydWUiKQogICAgICAgIAogICAgICAgICMg0J/QvtC60LDQt9GL0LLQsNC10Lwg0YHQvtC+0LHRidC10L3QuNC1INC+0LEg0YPRgdC/0LXRiNC90L7QuSDQsNCy0YLQvtGA0LjQt9Cw0YbQuNC4CiAgICAgICAgdG9hc3QoItCQ0LLRgtC+0YDQuNC30LDRhtC40Y8g0LLRi9C/0L7Qu9C90LXQvdCwINGD0YHQv9C10YjQvdC+OiAiICsgdXNlcl9uYW1lKQogICAgICAgIAogICAgICAgICMg0J/QtdGA0LXRhdC+0LTQuNC8INC90LAg0LPQu9Cw0LLQvdGL0Lkg0Y3QutGA0LDQvSDQvNC10L3RjgogICAgICAgIGhhc2hNYXAucHV0KCJGaW5pc2hQcm9jZXNzIiwgItCU0LLQtdGA0LjRgtC1IikKICAgIGVsc2U6CiAgICAgICAgdG9hc3QoItCe0YjQuNCx0LrQsDog0LTQsNC90L3Ri9C1INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjyBHVUlEINC40LvQuCDQuNC80Y8g0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIikKZWxzZToKICAgIHRvYXN0KCLQktGL0LHQtdGA0LjRgtC1INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjyDQtNC70Y8g0LDQstGC0L7RgNC40LfQsNGG0LjQuCIp",
+                                "method": "aW1wb3J0IGpzb24KCiMg0J/RgNC+0LLQtdGA0Y/QtdC8LCDQstGL0LHRgNCw0L0g0LvQuCDQv9C+0LvRjNC30L7QstCw0YLQtdC70YwKdXNlcl9ndWlkID0gIiIKdXNlcl9uYW1lID0gIiIKdXNlcl9kYXRhID0gTm9uZQoKIyDQodC/0L7RgdC+0LEgMTog0YfQtdGA0LXQtyBDYXJkc0NsaWNrICjQstGL0LHQvtGAINC40Lcg0YHQv9C40YHQutCwKQppZiBoYXNoTWFwLmNvbnRhaW5zS2V5KCJzZWxlY3RlZF9jYXJkX2tleSIpIGFuZCBoYXNoTWFwLmdldCgic2VsZWN0ZWRfY2FyZF9rZXkiKToKICAgIHNlbGVjdGVkX2tleSA9IGhhc2hNYXAuZ2V0KCJzZWxlY3RlZF9jYXJkX2tleSIpCiAgICBpZiAiJCIgaW4gc2VsZWN0ZWRfa2V5OgogICAgICAgIGRhdGFzZXRfbmFtZSwgcmVjb3JkX2lkID0gc2VsZWN0ZWRfa2V5LnNwbGl0KCIkIiwgMSkKICAgICAgICAKICAgICAgICAjINCY0YHQv9C+0LvRjNC30YPQtdC8IHNlbGVjdGVkX2NhcmRfZGF0YSDQtdGB0LvQuCDQtNC+0YHRgtGD0L/QvdCwCiAgICAgICAgaWYgaGFzaE1hcC5jb250YWluc0tleSgic2VsZWN0ZWRfY2FyZF9kYXRhIikgYW5kIGhhc2hNYXAuZ2V0KCJzZWxlY3RlZF9jYXJkX2RhdGEiKToKICAgICAgICAgICAgdXNlcl9kYXRhID0ganNvbi5sb2FkcyhoYXNoTWFwLmdldCgic2VsZWN0ZWRfY2FyZF9kYXRhIikpCiAgICAgICAgZWxzZToKICAgICAgICAgICAgIyDQmNC90LDRh9C1INC/0L7Qu9GD0YfQsNC10Lwg0LjQtyDQtNCw0YLQsNGB0LXRgtCwCiAgICAgICAgICAgIGRzX3VzZXJzID0gR2V0RGF0YVNldCgiZHNVc2VycyIpCiAgICAgICAgICAgIGlmIGRzX3VzZXJzOgogICAgICAgICAgICAgICAgdXNlcl9kYXRhX2pzb24gPSBkc191c2Vycy5nZXRTdHIoIl9pZCIsIHJlY29yZF9pZCkKICAgICAgICAgICAgICAgIGlmIHVzZXJfZGF0YV9qc29uOgogICAgICAgICAgICAgICAgICAgIHVzZXJfZGF0YSA9IGpzb24ubG9hZHModXNlcl9kYXRhX2pzb24pCgojINCh0L/QvtGB0L7QsSAyOiDRh9C10YDQtdC3IERhdGFTZXRGaWVsZCBpbmxpbmUgKNGA0YPRh9C90L7QuSDQstCy0L7QtCkKZWxpZiBoYXNoTWFwLmNvbnRhaW5zS2V5KCJzZWxlY3RlZF91c2VyIikgYW5kIGhhc2hNYXAuZ2V0KCJzZWxlY3RlZF91c2VyIik6CiAgICBzZWxlY3RlZF91c2VyID0gaGFzaE1hcC5nZXQoInNlbGVjdGVkX3VzZXIiKQogICAgaWYgIiQiIGluIHNlbGVjdGVkX3VzZXI6CiAgICAgICAgcGFydHMgPSBzZWxlY3RlZF91c2VyLnNwbGl0KCIkIikKICAgICAgICBpZiBsZW4ocGFydHMpID09IDI6CiAgICAgICAgICAgIHJlY29yZF9pZCA9IHBhcnRzWzFdCiAgICAgICAgICAgIGRzX3VzZXJzID0gR2V0RGF0YVNldCgiZHNVc2VycyIpCiAgICAgICAgICAgIGlmIGRzX3VzZXJzOgogICAgICAgICAgICAgICAgdXNlcl9kYXRhX2pzb24gPSBkc191c2Vycy5nZXRTdHIoIl9pZCIsIHJlY29yZF9pZCkKICAgICAgICAgICAgICAgIGlmIHVzZXJfZGF0YV9qc29uOgogICAgICAgICAgICAgICAgICAgIHVzZXJfZGF0YSA9IGpzb24ubG9hZHModXNlcl9kYXRhX2pzb24pCgojINCV0YHQu9C4INC90LDRiNC70Lgg0LTQsNC90L3Ri9C1INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjwppZiB1c2VyX2RhdGE6CiAgICB1c2VyX2d1aWQgPSB1c2VyX2RhdGEuZ2V0KCJ1aWQiLCAiIikKICAgIHVzZXJfbmFtZSA9IHVzZXJfZGF0YS5nZXQoImZ1bGxfbmFtZSIsIHVzZXJfZGF0YS5nZXQoIm5hbWUiLCAiIikpCiAgICAKICAgIGlmIHVzZXJfZ3VpZCBhbmQgdXNlcl9uYW1lOgogICAgICAgICMg0JfQsNC/0LjRgdGL0LLQsNC10Lwg0LIg0LPQu9C+0LHQsNC70YzQvdGL0LUg0L/QtdGA0LXQvNC10L3QvdGL0LUKICAgICAgICBoYXNoTWFwLnB1dCgiX2N1cnJlbnRfdXNlcl9ndWlkIiwgdXNlcl9ndWlkKQogICAgICAgIGhhc2hNYXAucHV0KCJfY3VycmVudF91c2VyX25hbWUiLCB1c2VyX25hbWUpCiAgICAgICAgaGFzaE1hcC5wdXQoIl9pc19hdXRob3JpemVkIiwgInRydWUiKQogICAgICAgIAogICAgICAgICMg0J/QvtC60LDQt9GL0LLQsNC10Lwg0YHQvtC+0LHRidC10L3QuNC1INC+0LEg0YPRgdC/0LXRiNC90L7QuSDQsNCy0YLQvtGA0LjQt9Cw0YbQuNC4CiAgICAgICAgdG9hc3QoItCQ0LLRgtC+0YDQuNC30LDRhtC40Y8g0LLRi9C/0L7Qu9C90LXQvdCwINGD0YHQv9C10YjQvdC+OiAiICsgdXNlcl9uYW1lKQogICAgICAgIAogICAgICAgICMg0J/QtdGA0LXRhdC+0LTQuNC8INC90LAg0LPQu9Cw0LLQvdGL0Lkg0Y3QutGA0LDQvSDQvNC10L3RjgogICAgICAgIGhhc2hNYXAucHV0KCJGaW5pc2hQcm9jZXNzIiwgIiIpCiAgICBlbHNlOgogICAgICAgIHRvYXN0KCLQntGI0LjQsdC60LA6INC90LUg0YPQtNCw0LvQvtGB0Ywg0L/QvtC70YPRh9C40YLRjCBHVUlEINC40LvQuCDQuNC80Y8g0L/QvtC70YzQt9C+0LLQsNGC0LXQu9GPIikKZWxzZToKICAgIHRvYXN0KCLQktGL0LHQtdGA0LjRgtC1INC/0L7Qu9GM0LfQvtCy0LDRgtC10LvRjyDQtNC70Y8g0LDQstGC0L7RgNC40LfQsNGG0LjQuCIp",
                                 "postExecute": "",
                                 "alias": ""
                             }
@@ -1834,58 +1575,13 @@
                 "action": "run",
                 "listener": "",
                 "type": "pythonscript",
-                "method": "aW1wb3J0IGpzb24KCiMg0JjQvdC40YbQuNCw0LvQuNC30LDRhtC40Y8g0LTQsNC90L3Ri9GFCmRzUHJvZHVjdHMgPSBDcmVhdGVEYXRhU2V0KCJkc1Byb2R1Y3RzIikKZHNQcm9kdWN0cy5zZXRPcHRpb25zKGpzb24uZHVtcHMoewogICAgImhhc2hfa2V5cyI6IFsibmFtZSIsICJjb2RlIiwgImFydGljbGUiLCAiYmFyY29kZSJdLAogICAgInNlYXJjaF9rZXlzIjogIm5hbWUsY29kZSxhcnRpY2xlLGJhcmNvZGUiLAogICAgInZpZXdfdGVtcGxhdGUiOiAiPGI+e2FydGljbGV9PC9iPiB7bmFtZX0iLAogICAgImxpc3RfbGF5b3V0IjogInByb2R1Y3RzX2luZm8iCn0sIGVuc3VyZV9hc2NpaT1GYWxzZSkpCgppZiBkc1Byb2R1Y3RzLmlzU2F2ZWQoKToKICAgIGRzUHJvZHVjdHMubG9hZCgpCgojINCY0L3QuNGG0LjQsNC70LjQt9Cw0YbQuNGPINC/0L7Qu9GM0LfQvtCy0LDRgtC10LvQtdC5CmRzVXNlcnMgPSBDcmVhdGVEYXRhU2V0KCJkc1VzZXJzIikKIyDQo9GB0YLQsNC90LDQstC70LjQstCw0LXQvCDQvtC/0YbQuNC4INC00LDRgtCw0YHQtdGC0LAKZHNVc2Vycy5zZXRPcHRpb25zKGpzb24uZHVtcHMoewogICAgImhhc2hfa2V5cyI6IFsibmFtZSIsICJmdWxsX25hbWUiXSwKICAgICJzZWFyY2hfa2V5cyI6ICJuYW1lLGZ1bGxfbmFtZSIsCiAgICAidmlld190ZW1wbGF0ZSI6ICI8Yj57bmFtZX08L2I+ICh7ZnVsbF9uYW1lfSkiCn0sIGVuc3VyZV9hc2NpaT1GYWxzZSkpCgojINCf0L7Qv9GL0YLQsNC10LzRgdGPINC30LDQs9GA0YPQt9C40YLRjCDQv9C+0LvRjNC30L7QstCw0YLQtdC70LXQuSDRgSDQtNC40YHQutCwCmlmIGRzVXNlcnMuaXNTYXZlZCgpOgogICAgZHNVc2Vycy5sb2FkKCkKCiMg0J/RgNC+0LLQtdGA0LXQtyDQvtC30L7QstCw0Y8g0YHQvtC30L7QstCw0L3QvtCz0L4g0LIg0L/QvtC70YzQt9C+0LLQsNGC0LXQu9C10LkKaWYgKG5vdCBoYXNoTWFwLmNvbnRhaW5zS2V5KCJfaXNfYXV0aG9yaXplZCIpIGFuZCBoYXNoTWFwLmdldCgiX2lzX2F1dGhvcml6ZWQiKSkgb3IgKG5vdCBoYXNoTWFwLmNvbnRhaW5zS2V5KCJfY3VycmVudF91c2VyX2d1aWQiKSBhbmQgaGFzaE1hcC5nZXQoIl9jdXJyZW50X3VzZXJfZ3VpZCIpKSBvciAobm90IGhhc2hNYXAuY29udGFpbnNLZXkoIl9jdXJyZW50X3VzZXJfbmFtZSIpIGFuZCBoYXNoTWFwLmdldCgiX2N1cnJlbnRfdXNlcl9uYW1lIikpOgogICAgaGFzaE1hcC5wdXQoIlN0YXJ0UHJvY2VzcyIsICLQntGC0LzQtdGH0LDRgtGM0LrQuNC5Iik=",
+                "method": "aW1wb3J0IGpzb24KCiMg0JjQvdC40YbQuNCw0LvQuNC30LDRhtC40Y8g0LTQsNC90L3Ri9GFCmRzUHJvZHVjdHMgPSBDcmVhdGVEYXRhU2V0KCJkc1Byb2R1Y3RzIikKZHNQcm9kdWN0cy5zZXRPcHRpb25zKGpzb24uZHVtcHMoewogICAgImhhc2hfa2V5cyI6IFsibmFtZSIsICJjb2RlIiwgImFydGljbGUiLCAiYmFyY29kZSJdLAogICAgInNlYXJjaF9rZXlzIjogIm5hbWUsY29kZSxhcnRpY2xlLGJhcmNvZGUiLAogICAgInZpZXdfdGVtcGxhdGUiOiAiPGI+e2FydGljbGV9PC9iPiB7bmFtZX0iLAogICAgImxpc3RfbGF5b3V0IjogInByb2R1Y3RzX2luZm8iCn0sIGVuc3VyZV9hc2NpaT1GYWxzZSkpCgppZiBkc1Byb2R1Y3RzLmlzU2F2ZWQoKToKICAgIGRzUHJvZHVjdHMubG9hZCgpCgojINCY0L3QuNGG0LjQsNC70LjQt9Cw0YbQuNGPINC/0L7Qu9GM0LfQvtCy0LDRgtC10LvQtdC5CmRzVXNlcnMgPSBDcmVhdGVEYXRhU2V0KCJkc1VzZXJzIikKIyDQo9GB0YLQsNC90LDQstC70LjQstCw0LXQvCDQvtC/0YbQuNC4INC00LDRgtCw0YHQtdGC0LAKZHNVc2Vycy5zZXRPcHRpb25zKGpzb24uZHVtcHMoewogICAgImhhc2hfa2V5cyI6IFsibmFtZSIsICJmdWxsX25hbWUiXSwKICAgICJzZWFyY2hfa2V5cyI6ICJuYW1lLGZ1bGxfbmFtZSIsCiAgICAidmlld190ZW1wbGF0ZSI6ICI8Yj57bmFtZX08L2I+ICh7ZnVsbF9uYW1lfSkiCn0sIGVuc3VyZV9hc2NpaT1GYWxzZSkpCgojINCf0L7Qv9GL0YLQsNC10LzRgdGPINC30LDQs9GA0YPQt9C40YLRjCDQv9C+0LvRjNC30L7QstCw0YLQtdC70LXQuSDRgSDQtNC40YHQutCwCmlmIGRzVXNlcnMuaXNTYXZlZCgpOgogICAgZHNVc2Vycy5sb2FkKCkKCiMg0J7RgtC80LXRh9Cw0LXQvCDQs9C70L7QsdCw0LvRjNC90YvQtSDQv9C10YDQtdC80LXQvdC90YvQtQpoYXNoTWFwLnB1dCgiX2lzX2F1dGhvcml6ZWQiLCAiZmFsc2UiKQpoYXNoTWFwLnB1dCgiX2N1cnJlbnRfdXNlcl9ndWlkIiwgIiIpCmhhc2hNYXAucHV0KCJfY3VycmVudF91c2VyX25hbWUiLCAiIikKaGFzaE1hcC5wdXQoIlN0YXJ0UHJvY2VzcyIsICLQkNCy0YLQvtGA0LjQt9Cw0YbQuNGPIik=",
                 "postExecute": "",
-                "alias": ""
-            },
-            {
-                "event": "onInputMenu",
-                "action": "run",
-                "listener": "btn_search_product",
-                "type": "set",
-                "method": "StartProcess = Поиск товара",
-                "postExecute": "",
-                "alias": ""
-            },
-            {
-                "event": "onInputMenu",
-                "action": "run",
-                "listener": "btn_check_prices",
-                "type": "set",
-                "method": "StartProcess = Проверка ценников",
-                "postExecute": "",
-                "alias": ""
-            },
-            {
-                "event": "onInputMenu",
-                "action": "run",
-                "listener": "btn_orders",
-                "type": "set",
-                "method": "StartProcess = Заказы",
-                "postExecute": "",
-                "alias": ""
-            },
-            {
-                "event": "onInputMenu",
-                "action": "run",
-                "listener": "btn_settings",
-                "type": "set",
-                "method": "StartProcess = Настройки",
-                "postExecute": "",
-                "alias": ""
-            },
-            {
-                "event": "onInputMenu",
-                "action": "run",
-                "listener": "btn_logout",
-                "type": "set",
-                "method": "StartProcess = Авторизация",
-                "postExecute": "[{\"action\": \"run\", \"type\": \"pythonscript\", \"method\": \"aGFzaE1hcC5wdXQoIl9pc19hdXRob3JpemVkIiwgImZhbHNlIikKaGFzaE1hcC5wdXQoIl9jdXJyZW50X3VzZXJfZ3VpZCIsICIiKQpoYXNoTWFwLnB1dCgiX2N1cnJlbnRfdXNlcl9uYW1lIiwgIiIp\"}]",
                 "alias": ""
             }
         ],
         "host_uid": "0effe55f251048279f5e8aac3b2c88d8",
-        "ConfigurationFileName": "Megastroy_UT11_2025.9.23.ui",
+        "ConfigurationFileName": "Megastroy_UT11_v2025.09.21.ui",
         "agent": false,
         "ForegroundService": false,
         "StopForegroundServiceOnExit": false,
@@ -1893,10 +1589,10 @@
         "BroadcastVariable": "",
         "FaceRecognitionURL": "",
         "OnKeyboardMain": false,
-        "LaunchProcess": "Меню",
+        "LaunchProcess": "",
         "LaunchVar": "",
         "MenuWebTemplate": "",
-        "Launch": "Process",
+        "Launch": "",
         "HTMLHead": "",
         "HTMLdocument_ready": "",
         "PyGeneral": "",
